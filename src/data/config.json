@@ -29,9 +29,9 @@
     }
   ],
   "hero": {
-    "desktopBanner": "/media/ultrapanda.webp",
-    "mobileBanner": "/media/bannerphone.webp",
-    "pandaOverlay": "/media/panda.png",
+    "desktopBanner": "/ultrapanda/media/ultrapanda.webp",
+    "mobileBanner": "/ultrapanda/media/bannerphone.webp",
+    "pandaOverlay": "/ultrapanda/media/panda.png",
     "offerText": "1ST TIME OFFER",
     "bonusText": "100% Sign Up Bonus"
   },
