@@ -199,44 +199,38 @@ export function Games(currentPath = '/games') {
 }
 
 export function initGames() {
-  // FAQ Accordion - Clean List Format
-  const faqQuestionRows = document.querySelectorAll('.faq-question-row');
-  const faqAnswers = document.querySelectorAll('.faq-answer-dropdown');
+  // Games FAQ Accordion - Scoped to games-faq section
+  const gamesFaqQuestions = document.querySelectorAll('.games-faq .faq-question-row');
+  const gamesFaqAnswers = document.querySelectorAll('.games-faq .faq-answer-dropdown');
 
-  faqQuestionRows.forEach((questionRow, index) => {
-    const answer = faqAnswers[index];
-    const icon = questionRow.querySelector('i');
+  // Expand first FAQ by default
+  if (gamesFaqQuestions.length > 0 && gamesFaqAnswers.length > 0) {
+    gamesFaqQuestions[0].classList.add('active');
+    gamesFaqAnswers[0].classList.add('active');
+    const firstIcon = gamesFaqQuestions[0].querySelector('i');
+    if (firstIcon) firstIcon.classList.add('rotate-45');
+  }
 
-    questionRow.addEventListener('click', () => {
-      const isActive = questionRow.classList.contains('active');
+  gamesFaqQuestions.forEach((question, index) => {
+    const answer = gamesFaqAnswers[index];
+    const icon = question.querySelector('i');
+
+    question.addEventListener('click', () => {
+      const isActive = question.classList.contains('active');
+
+      // Close all FAQs
+      gamesFaqQuestions.forEach((q, i) => {
+        q.classList.remove('active');
+        gamesFaqAnswers[i].classList.remove('active');
+        const qIcon = q.querySelector('i');
+        if (qIcon) qIcon.classList.remove('rotate-45');
+      });
 
       // Toggle current FAQ
       if (!isActive) {
-        // Close all other FAQs
-        faqQuestionRows.forEach((q, i) => {
-          if (i !== index) {
-            q.classList.remove('active');
-            faqAnswers[i].classList.remove('active');
-            const qIcon = q.querySelector('i');
-            if (qIcon) {
-              qIcon.classList.remove('rotate-45');
-            }
-          }
-        });
-
-        // Open current FAQ
-        questionRow.classList.add('active');
+        question.classList.add('active');
         answer.classList.add('active');
-        if (icon) {
-          icon.classList.add('rotate-45');
-        }
-      } else {
-        // Close current FAQ
-        questionRow.classList.remove('active');
-        answer.classList.remove('active');
-        if (icon) {
-          icon.classList.remove('rotate-45');
-        }
+        if (icon) icon.classList.add('rotate-45');
       }
     });
   });
