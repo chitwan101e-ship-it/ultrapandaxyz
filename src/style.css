@@ -52,25 +52,46 @@
 
   .home-hero {
     @apply relative w-full overflow-hidden;
-    height: 700px;
+    min-height: 600px;
     background: radial-gradient(circle at 50% 50%, #2a1b15 0%, #1a0f0a 100%);
   }
 
-  .home-hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: url('/media/ultrapanda.webp') center/cover no-repeat;
-    opacity: 0.3;
-    z-index: 1;
+  .hero-banner-wrapper {
+    @apply relative w-full;
+    min-height: 600px;
   }
 
-  .desktop-banner,
+  .hero-dark-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  }
+
+  .hero-content-overlay {
+    @apply relative z-20;
+  }
+
+  .hero-text-content {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .hero-text-content strong {
+    @apply text-white font-bold;
+  }
+
+  .desktop-banner {
+    @apply block w-full h-full object-cover;
+  }
+
   .mobile-banner {
-    display: none !important;
+    @apply hidden md:hidden;
+  }
+
+  @media (max-width: 768px) {
+    .desktop-banner {
+      @apply hidden;
+    }
+    .mobile-banner {
+      @apply block w-full h-full object-cover;
+    }
   }
 
   .main-header {

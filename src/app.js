@@ -11,9 +11,12 @@ export function initApp(currentPath = '/') {
     
     <!-- hero section -->
     <section class="home-hero relative">
-      <img src="${config.hero.desktopBanner}" alt="Hero Banner" class="desktop-banner w-full">
-      <img src="${config.hero.mobileBanner}" alt="Mobile Hero Banner" class="mobile-banner w-full hidden">
-      <img src="${config.hero.pandaOverlay}" alt="Panda Overlay" class="panda-overlay absolute bottom-5 left-1/2 transform -translate-x-1/2 w-[100px] h-auto z-[1000] hidden">
+      <div class="hero-banner-wrapper relative">
+        <img src="${config.hero.desktopBanner}" alt="Hero Banner" class="desktop-banner w-full">
+        <img src="${config.hero.mobileBanner}" alt="Mobile Hero Banner" class="mobile-banner w-full hidden">
+        <!-- Dark overlay for text prominence -->
+        <div class="hero-dark-overlay absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+      </div>
       
       <div class="casino-shimmer"></div>
       <div class="lava-overlay">
@@ -28,27 +31,21 @@ export function initApp(currentPath = '/') {
         <div class="lava-flow-top"></div>
         <div class="lava-flow-top"></div>
       </div>
-      <div class="promo-banner absolute top-1/2 left-[8%] transform -translate-y-1/2 z-[999]">
-        <h2 class="offer-text text-2xl font-bold mb-2">${config.hero.offerText}</h2>
-        <h1 class="bonus-text text-4xl font-bold mb-4">${config.hero.bonusText}</h1>
-        <div class="promo-buttons flex gap-6 mt-8">
-          <a href="${config.links.playNow}" target="_blank" class="modern-btn btn-play">Play Now</a>
-          <a href="${config.links.signUp}" target="_blank" class="modern-btn btn-join">Join Now</a>
-        </div>
-      </div>
-    </section>
-    
-    <!-- SEO Intro Section -->
-    <section class="seo-intro py-12 px-4">
-      <div class="g-container">
-        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Ultrapanda - Play Online Games | Download Ultra Panda Mobi App</h1>
-        <div class="max-w-4xl mx-auto text-center space-y-4">
-          <p class="text-lg leading-relaxed">
-            <strong>Ultrapanda</strong> is your premier destination for premium <strong>online fish arcade games</strong>, exciting <strong>777 slots</strong>, and immersive casino experiences. Play <strong>Ultrapanda online</strong> instantly or download the <strong>Ultra Panda Mobi</strong> app for mobile gaming. As the official <strong>Ultrapanda.xyz</strong> platform, we deliver instant access to hundreds of games, secure <strong>Ultrapanda login</strong>, and exclusive bonuses—all without requiring agents.
-          </p>
-          <p class="text-lg leading-relaxed">
-            Whether you're seeking the thrill of <strong>Ocean King fish shooting games</strong>, classic <strong>Ultrapanda 777 slots</strong>, or the latest arcade casino titles, <strong>Ultrapanda</strong> provides a seamless gaming experience. Access <strong>Ultrapanda mobi</strong> on your mobile device or play <strong>Ultrapanda online</strong> from your desktop. Join thousands of players who choose <strong>Ultrapanda</strong> for reliable gameplay, fast payouts, and 24/7 support.
-          </p>
+      
+      <!-- Hero Content - Moved from SEO Intro Section -->
+      <div class="hero-content-overlay absolute inset-0 flex items-center justify-center z-20 px-4">
+        <div class="hero-text-content max-w-5xl mx-auto text-center text-white">
+          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
+            Ultrapanda - Play Online Games | Download<br>Ultra Panda Mobi App
+          </h1>
+          <div class="space-y-4 text-lg md:text-xl leading-relaxed">
+            <p>
+              <strong>Ultrapanda</strong> is your premier destination for premium <strong>online fish arcade games</strong>, exciting <strong>777 slots</strong>, and immersive casino experiences. Play <strong>Ultrapanda online</strong> instantly or download the <strong>Ultra Panda Mobi</strong> app for mobile gaming. As the official <strong>Ultrapanda.xyz</strong> platform, we deliver instant access to hundreds of games, secure <strong>Ultrapanda login</strong>, and exclusive bonuses—all without requiring agents.
+            </p>
+            <p>
+              Whether you're seeking the thrill of <strong>Ocean King fish shooting games</strong>, classic <strong>Ultrapanda 777 slots</strong>, or the latest arcade casino titles, <strong>Ultrapanda</strong> provides a seamless gaming experience. Access <strong>Ultrapanda mobi</strong> on your mobile device or play <strong>Ultrapanda online</strong> from your desktop. Join thousands of players who choose <strong>Ultrapanda</strong> for reliable gameplay, fast payouts, and 24/7 support.
+            </p>
+          </div>
         </div>
       </div>
     </section>
