@@ -183,17 +183,6 @@ export function Games(currentPath = '/games') {
       </div>
     </section>
     
-    <section class="copyright py-6 border-t border-gray-700">
-      <div class="copyright-container g-flex g-container justify-between flex-wrap gap-4">
-        <div class="copy1 copy">
-          <p>${config.site.copyright}</p>
-        </div>
-        <div class="copy2 copy">
-          <p>Privacy policy | Terms & Conditions</p>
-        </div>
-      </div>
-    </section>
-    
     ${Footer()}
   `;
 }
