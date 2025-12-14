@@ -31,12 +31,12 @@ const routes = {
 };
 
 function initMobileMenu() {
-  const mobileNav = document.querySelector('.mobile-nav');
-  const menu = document.querySelector('.menu');
+  const mobileNavBtn = document.getElementById('mobile-nav-toggle');
+  const menu = document.getElementById('mobile-menu');
   const closeMenu = document.querySelector('.close-menu');
 
-  if (mobileNav && menu && closeMenu) {
-    mobileNav.addEventListener('click', () => {
+  if (mobileNavBtn && menu && closeMenu) {
+    mobileNavBtn.addEventListener('click', () => {
       menu.classList.add('active');
       document.body.style.overflow = 'hidden';
     });
@@ -47,7 +47,7 @@ function initMobileMenu() {
     });
 
     document.addEventListener('click', (e) => {
-      if (!menu.contains(e.target) && !mobileNav.contains(e.target)) {
+      if (!menu.contains(e.target) && !mobileNavBtn.contains(e.target)) {
         menu.classList.remove('active');
         document.body.style.overflow = 'auto';
       }
