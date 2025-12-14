@@ -115,21 +115,23 @@ export function ContactUs(currentPath = '/contact-us') {
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Frequently Asked Questions</h2>
         <p class="text-center mb-8 max-w-2xl mx-auto">Find quick answers to common questions about <strong>Ultrapanda login</strong>, <strong>Ultra Panda games</strong>, account management, and platform features. If you don't find what you're looking for, don't hesitate to <a href="#contact-form" class="text-orange hover:underline">contact our support team</a>.</p>
         
-        <!-- FAQ - Vertical Layout (Question followed by Answer) -->
-        <div class="faq-wrapper-vertical max-w-4xl mx-auto">
-          ${faqs.map((faq, index) => `
-            <div class="faq-item-vertical mb-4 bg-gray-800 rounded-lg overflow-hidden">
-              <div class="faq-question-vertical cursor-pointer p-4 flex justify-between items-center ${index === 0 ? 'active' : ''}" data-index="${index}">
-                <h3 class="text-lg font-semibold text-white pr-4">${faq.question}</h3>
-                <i class="bi bi-chevron-down text-orange transition-transform ${index === 0 ? 'rotate-180' : ''}"></i>
-              </div>
-              <div class="faq-answer-vertical bg-gray-700 ${index === 0 ? 'active' : ''}" data-index="${index}">
-                <div class="faq-answer-content p-4">
-                  <p class="text-gray-300 leading-relaxed">${faq.answer}</p>
+        <!-- FAQ - Clean List Format -->
+        <div class="faq-list-wrapper max-w-4xl mx-auto">
+          <ul class="faq-list">
+            ${faqs.map((faq, index) => `
+              <li class="faq-list-item">
+                <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700 ${index === 0 ? 'active' : ''}" data-index="${index}">
+                  <span class="faq-question-text text-white text-lg">${faq.question}</span>
+                  <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300 ${index === 0 ? 'rotate-45' : ''}"></i>
                 </div>
-              </div>
-            </div>
-          `).join('')}
+                <div class="faq-answer-dropdown ${index === 0 ? 'active' : ''}" data-index="${index}">
+                  <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                    ${faq.answer}
+                  </div>
+                </div>
+              </li>
+            `).join('')}
+          </ul>
         </div>
       </div>
     </section>
@@ -203,30 +205,44 @@ export function ContactUs(currentPath = '/contact-us') {
 }
 
 export function initContactUs() {
-  // FAQ Accordion - Vertical Layout
-  const faqQuestions = document.querySelectorAll('.faq-question-vertical');
-  const faqAnswers = document.querySelectorAll('.faq-answer-vertical');
+  // FAQ Accordion - Clean List Format
+  const faqQuestionRows = document.querySelectorAll('.faq-question-row');
+  const faqAnswers = document.querySelectorAll('.faq-answer-dropdown');
 
-  faqQuestions.forEach((question, index) => {
+  faqQuestionRows.forEach((questionRow, index) => {
     const answer = faqAnswers[index];
-    const icon = question.querySelector('i');
+    const icon = questionRow.querySelector('i');
 
-    question.addEventListener('click', () => {
-      const isActive = question.classList.contains('active');
-
-      // Close all FAQs
-      faqQuestions.forEach((q, i) => {
-        q.classList.remove('active');
-        faqAnswers[i].classList.remove('active');
-        const qIcon = q.querySelector('i');
-        if (qIcon) qIcon.classList.remove('rotate-180');
-      });
+    questionRow.addEventListener('click', () => {
+      const isActive = questionRow.classList.contains('active');
 
       // Toggle current FAQ
       if (!isActive) {
-        question.classList.add('active');
+        // Close all other FAQs
+        faqQuestionRows.forEach((q, i) => {
+          if (i !== index) {
+            q.classList.remove('active');
+            faqAnswers[i].classList.remove('active');
+            const qIcon = q.querySelector('i');
+            if (qIcon) {
+              qIcon.classList.remove('rotate-45');
+            }
+          }
+        });
+
+        // Open current FAQ
+        questionRow.classList.add('active');
         answer.classList.add('active');
-        if (icon) icon.classList.add('rotate-180');
+        if (icon) {
+          icon.classList.add('rotate-45');
+        }
+      } else {
+        // Close current FAQ
+        questionRow.classList.remove('active');
+        answer.classList.remove('active');
+        if (icon) {
+          icon.classList.remove('rotate-45');
+        }
       }
     });
   });
