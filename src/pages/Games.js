@@ -90,31 +90,77 @@ export function Games(currentPath = '/games') {
     <section class="games-faq py-12 bg-gray-900">
       <div class="g-container max-w-4xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions About Ultrapanda Games</h2>
-        <div class="space-y-6">
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">How many games does Ultrapanda offer?</h3>
-            <p>Ultrapanda features over 75 premium games including <strong>fish arcade games</strong>, <strong>777 slot machines</strong>, and <strong>arcade casino titles</strong>. Our library is regularly updated with new releases and popular favorites to keep your gaming experience fresh and exciting.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">What are the most popular Ultrapanda games?</h3>
-            <p>Our most played games include <strong>Ocean King</strong> (fish shooting), <strong>Golden Legend Plus</strong> (slots), <strong>Hai Di Lao</strong> (arcade), and <strong>Triple Supreme Xtreme</strong> (777 slots). These titles consistently rank high in player engagement and satisfaction. Visit our <a href="/" class="text-orange hover:underline">homepage</a> to see featured games.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">Can I play Ultrapanda games on mobile?</h3>
-            <p>Yes! All <strong>Ultrapanda games</strong> are fully optimized for mobile devices. You can play directly through your mobile browser or download the <strong>Ultra Panda Mobi</strong> app for an enhanced mobile gaming experience with faster loading times and smoother gameplay.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">Do I need to download games to play?</h3>
-            <p>No downloads required for most games. You can play <strong>Ultrapanda games</strong> instantly through your web browser. However, downloading the <strong>Ultrapanda app</strong> provides additional features, faster performance, and offline access to certain game modes.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">Are Ultrapanda games fair and secure?</h3>
-            <p>Absolutely. All <strong>Ultrapanda games</strong> use certified random number generators (RNG) to ensure fair play. Our platform employs advanced security measures to protect your account and transactions. We're committed to providing a safe, transparent gaming environment.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">How do I find specific game types?</h3>
-            <p>Our games are organized by categories: <strong>fish arcade games</strong>, <strong>777 slots</strong>, and <strong>arcade casino titles</strong>. You can browse all games above or use our search feature to find specific titles. For gaming tips and strategies, check out our <a href="/blog" class="text-orange hover:underline">Ultrapanda blog</a>.</p>
-          </div>
+        
+        <!-- FAQ - Clean List Format -->
+        <div class="faq-list-wrapper max-w-4xl mx-auto">
+          <ul class="faq-list">
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="0">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">1.</span>How many games does Ultrapanda offer?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="0">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  Ultrapanda features over 75 premium games including <strong>fish arcade games</strong>, <strong>777 slot machines</strong>, and <strong>arcade casino titles</strong>. Our library is regularly updated with new releases and popular favorites to keep your gaming experience fresh and exciting.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="1">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">2.</span>What are the most popular Ultrapanda games?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="1">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  Our most played games include <strong>Ocean King</strong> (fish shooting), <strong>Golden Legend Plus</strong> (slots), <strong>Hai Di Lao</strong> (arcade), and <strong>Triple Supreme Xtreme</strong> (777 slots). These titles consistently rank high in player engagement and satisfaction. Visit our <a href="/" class="text-orange hover:underline">homepage</a> to see featured games.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="2">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">3.</span>Can I play Ultrapanda games on mobile?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="2">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  Yes! All <strong>Ultrapanda games</strong> are fully optimized for mobile devices. You can play directly through your mobile browser or download the <strong>Ultra Panda Mobi</strong> app for an enhanced mobile gaming experience with faster loading times and smoother gameplay.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="3">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">4.</span>Do I need to download games to play?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="3">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  No downloads required for most games. You can play <strong>Ultrapanda games</strong> instantly through your web browser. However, downloading the <strong>Ultrapanda app</strong> provides additional features, faster performance, and offline access to certain game modes.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="4">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">5.</span>Are Ultrapanda games fair and secure?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="4">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  Absolutely. All <strong>Ultrapanda games</strong> use certified random number generators (RNG) to ensure fair play. Our platform employs advanced security measures to protect your account and transactions. We're committed to providing a safe, transparent gaming environment.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="5">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">6.</span>How do I find specific game types?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="5">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  Our games are organized by categories: <strong>fish arcade games</strong>, <strong>777 slots</strong>, and <strong>arcade casino titles</strong>. You can browse all games above or use our search feature to find specific titles. For gaming tips and strategies, check out our <a href="/blog" class="text-orange hover:underline">Ultrapanda blog</a>.
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -153,7 +199,47 @@ export function Games(currentPath = '/games') {
 }
 
 export function initGames() {
-  // No filter functionality needed anymore
+  // FAQ Accordion - Clean List Format
+  const faqQuestionRows = document.querySelectorAll('.faq-question-row');
+  const faqAnswers = document.querySelectorAll('.faq-answer-dropdown');
+
+  faqQuestionRows.forEach((questionRow, index) => {
+    const answer = faqAnswers[index];
+    const icon = questionRow.querySelector('i');
+
+    questionRow.addEventListener('click', () => {
+      const isActive = questionRow.classList.contains('active');
+
+      // Toggle current FAQ
+      if (!isActive) {
+        // Close all other FAQs
+        faqQuestionRows.forEach((q, i) => {
+          if (i !== index) {
+            q.classList.remove('active');
+            faqAnswers[i].classList.remove('active');
+            const qIcon = q.querySelector('i');
+            if (qIcon) {
+              qIcon.classList.remove('rotate-45');
+            }
+          }
+        });
+
+        // Open current FAQ
+        questionRow.classList.add('active');
+        answer.classList.add('active');
+        if (icon) {
+          icon.classList.add('rotate-45');
+        }
+      } else {
+        // Close current FAQ
+        questionRow.classList.remove('active');
+        answer.classList.remove('active');
+        if (icon) {
+          icon.classList.remove('rotate-45');
+        }
+      }
+    });
+  });
 }
 
 

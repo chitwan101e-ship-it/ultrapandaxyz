@@ -121,7 +121,7 @@ export function ContactUs(currentPath = '/contact-us') {
             ${faqs.map((faq, index) => `
               <li class="faq-list-item">
                 <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700 ${index === 0 ? 'active' : ''}" data-index="${index}">
-                  <span class="faq-question-text text-white text-lg">${faq.question}</span>
+                  <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">${index + 1}.</span>${faq.question}</span>
                   <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300 ${index === 0 ? 'rotate-45' : ''}"></i>
                 </div>
                 <div class="faq-answer-dropdown ${index === 0 ? 'active' : ''}" data-index="${index}">
