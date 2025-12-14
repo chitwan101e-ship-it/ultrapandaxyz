@@ -50,27 +50,6 @@ export function initApp(currentPath = '/') {
       </div>
     </section>
     
-    <!-- Why Choose Ultrapanda Section -->
-    <section class="why-choose py-12 bg-gray-900">
-      <div class="g-container">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Why Choose Ultrapanda for Your Gaming Experience?</h2>
-        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-4 text-orange">Ultrapanda Login & Instant Access</h3>
-            <p>Unlike traditional gaming platforms, <strong>Ultrapanda</strong> eliminates the need for agents. Complete your <strong>Ultrapanda login</strong> directly through our secure platform and start playing immediately. Our streamlined <strong>Ultrapanda mobi login</strong> process gets you into the action in seconds, whether you're playing <strong>Ultrapanda online</strong> or using the <strong>Ultra Panda Mobi</strong> app.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-4 text-orange">Download Ultrapanda or Play Online</h3>
-            <p>Choose how you want to play <strong>Ultrapanda</strong> - download the <strong>Ultra Panda Mobi</strong> app for mobile gaming or play <strong>Ultrapanda online</strong> instantly from your browser. With over 75 premium games including <strong>fish arcade shooters</strong>, <strong>777 slots</strong>, and <strong>arcade casino classics</strong>, <strong>Ultrapanda games</strong> offer unmatched variety.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-4 text-orange">Secure Ultrapanda Platform</h3>
-            <p>Your security is our priority. <strong>Ultrapanda</strong> employs advanced encryption and secure payment processing to protect your data and transactions. Play with confidence knowing you're on the official <strong>Ultrapanda.xyz</strong> platform. Your <strong>Ultrapanda login</strong> credentials are always protected.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
     <!-- most popular games -->
     <section class="most-popular py-12">
       <div class="most-popular-container g-container">
