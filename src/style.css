@@ -213,6 +213,24 @@
     @apply scale-110 text-orange;
   }
 
+  /* Why Choose Ultrapanda Section */
+  .why-choose-card {
+    @apply p-6;
+  }
+
+  .why-choose-card h3 {
+    @apply mb-4;
+  }
+
+  .why-choose-card p {
+    @apply leading-relaxed;
+  }
+
+  .why-choose-card strong {
+    @apply text-yellow-400 font-semibold;
+    color: #FACC15;
+  }
+
   /* Footer Styles */
   .main-footer {
     @apply relative mt-auto;

@@ -165,35 +165,108 @@ export function initApp(currentPath = '/') {
       </div>
     </section>
     
+    <!-- Why Choose Ultrapanda Section -->
+    <section class="why-choose py-12 bg-gray-900">
+      <div class="g-container max-w-6xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Why Choose Ultrapanda for Your Gaming Experience?</h2>
+        <div class="grid md:grid-cols-3 gap-8">
+          <div class="why-choose-card">
+            <h3 class="text-2xl font-bold mb-4 text-orange">Ultrapanda Login & Instant Access</h3>
+            <p class="text-white leading-relaxed">
+              No agents required. Log in directly through our secure platform and start playing immediately. Our streamlined <strong>Ultrapanda mobi login</strong> process gets you into the action quickly, whether you're playing <strong>Ultrapanda online</strong> or using the <strong>Ultra Panda Mobi</strong> app.
+            </p>
+          </div>
+          <div class="why-choose-card">
+            <h3 class="text-2xl font-bold mb-4 text-orange">Download Ultrapanda or Play Online</h3>
+            <p class="text-white leading-relaxed">
+              Download the <strong>Ultra Panda Mobi</strong> app for mobile gaming or play <strong>Ultrapanda online</strong> instantly from your browser. With over 75 premium games including <strong>fish arcade shooters</strong>, <strong>777 slots</strong>, and <strong>arcade casino classics</strong>, experience unmatched variety in <strong>Ultrapanda games</strong>.
+            </p>
+          </div>
+          <div class="why-choose-card">
+            <h3 class="text-2xl font-bold mb-4 text-orange">Secure Ultrapanda Platform</h3>
+            <p class="text-white leading-relaxed">
+              Your security is our priority. <strong>Ultrapanda</strong> employs advanced encryption and secure payment processing to protect your data and transactions. Play with confidence knowing you're on the official <strong>Ultrapanda.xyz</strong> platform. Your <strong>Ultrapanda login</strong> credentials are always protected.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <!-- Home FAQ Section -->
     <section class="home-faq py-12 bg-gray-900">
       <div class="g-container max-w-4xl mx-auto">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions About Ultrapanda</h2>
-        <div class="space-y-6">
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">Is Ultrapanda.xyz the official site?</h3>
-            <p>Yes – Ultrapanda.xyz is the newest, official version of the Ultrapanda gaming platform. We provide secure access to all <strong>Ultrapanda Club 777</strong> games, features, and services without requiring agents or third-party intermediaries.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">Do I need an agent to play on Ultrapanda?</h3>
-            <p>No agents are required. You can register and play instantly through our secure platform. Simply create your account, make a deposit, and start enjoying our extensive library of <strong>fish arcade games</strong> and <strong>slot machines</strong> immediately.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">What types of games does Ultrapanda offer?</h3>
-            <p>Ultrapanda features a diverse collection including <strong>fish shooting games</strong> like Ocean King, classic and modern <strong>777 slot machines</strong>, <strong>arcade casino games</strong>, and themed adventure titles. Browse our complete <a href="/games" class="text-orange hover:underline">games library</a> to discover all available titles.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">How do I download Ultrapanda or access Ultrapanda mobi?</h3>
-            <p>To download <strong>Ultrapanda</strong>, visit our official <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">Facebook page</a> to get the <strong>Ultra Panda Mobi</strong> app download link. The <strong>Ultrapanda mobi</strong> app provides optimized mobile gaming with full access to all <strong>Ultrapanda</strong> features and games. You can also play <strong>Ultrapanda online</strong> directly from your browser without downloading.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">How do I complete my Ultrapanda login?</h3>
-            <p>To access your account, use your <strong>Ultrapanda login</strong> credentials on our secure platform. If you need help with <strong>Ultrapanda mobi login</strong> or have forgotten your <strong>Ultrapanda login password</strong>, contact our support team. We'll help you regain access to your <strong>Ultrapanda</strong> account quickly.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">What bonuses does Ultrapanda offer?</h3>
-            <p>New players receive a <strong>100% sign-up bonus</strong> on their first deposit. We also offer weekly promotions, reload bonuses, and special event rewards. Check our <a href="/blog" class="text-orange hover:underline">blog</a> for the latest bonus announcements and promotional offers.</p>
-          </div>
+        
+        <!-- FAQ - Clean List Format -->
+        <div class="faq-list-wrapper max-w-4xl mx-auto">
+          <ul class="faq-list">
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="0">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">1.</span>Is Ultrapanda.xyz the official site?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="0">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  Yes – Ultrapanda.xyz is the newest, official version of the Ultrapanda gaming platform. We provide secure access to all <strong>Ultrapanda Club 777</strong> games, features, and services without requiring agents or third-party intermediaries.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="1">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">2.</span>Do I need an agent to play on Ultrapanda?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="1">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  No agents are required. You can register and play instantly through our secure platform. Simply create your account, make a deposit, and start enjoying our extensive library of <strong>fish arcade games</strong> and <strong>slot machines</strong> immediately.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="2">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">3.</span>What types of games does Ultrapanda offer?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="2">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  Ultrapanda features a diverse collection including <strong>fish shooting games</strong> like Ocean King, classic and modern <strong>777 slot machines</strong>, <strong>arcade casino games</strong>, and themed adventure titles. Browse our complete <a href="/games" class="text-orange hover:underline">games library</a> to discover all available titles.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="3">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">4.</span>How do I download Ultrapanda or access Ultrapanda mobi?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="3">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  To download <strong>Ultrapanda</strong>, visit our official <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">Facebook page</a> to get the <strong>Ultra Panda Mobi</strong> app download link. The <strong>Ultrapanda mobi</strong> app provides optimized mobile gaming with full access to all <strong>Ultrapanda</strong> features and games. You can also play <strong>Ultrapanda online</strong> directly from your browser without downloading.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="4">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">5.</span>How do I complete my Ultrapanda login?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="4">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  To access your account, use your <strong>Ultrapanda login</strong> credentials on our secure platform. If you need help with <strong>Ultrapanda mobi login</strong> or have forgotten your <strong>Ultrapanda login password</strong>, contact our support team. We'll help you regain access to your <strong>Ultrapanda</strong> account quickly.
+                </div>
+              </div>
+            </li>
+            <li class="faq-list-item">
+              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="5">
+                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">6.</span>What bonuses does Ultrapanda offer?</span>
+                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
+              </div>
+              <div class="faq-answer-dropdown" data-index="5">
+                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
+                  New players receive a <strong>100% sign-up bonus</strong> on their first deposit. We also offer weekly promotions, reload bonuses, and special event rewards. Check our <a href="/blog" class="text-orange hover:underline">blog</a> for the latest bonus announcements and promotional offers.
+                </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
@@ -233,6 +306,51 @@ export function initApp(currentPath = '/') {
   // Initialize JavaScript functionality
   initMobileMenu();
   initGameLinks();
+  initHomeFAQ();
+}
+
+function initHomeFAQ() {
+  // FAQ Accordion - Clean List Format
+  const faqQuestionRows = document.querySelectorAll('.faq-question-row');
+  const faqAnswers = document.querySelectorAll('.faq-answer-dropdown');
+
+  faqQuestionRows.forEach((questionRow, index) => {
+    const answer = faqAnswers[index];
+    const icon = questionRow.querySelector('i');
+
+    questionRow.addEventListener('click', () => {
+      const isActive = questionRow.classList.contains('active');
+
+      // Toggle current FAQ
+      if (!isActive) {
+        // Close all other FAQs
+        faqQuestionRows.forEach((q, i) => {
+          if (i !== index) {
+            q.classList.remove('active');
+            faqAnswers[i].classList.remove('active');
+            const qIcon = q.querySelector('i');
+            if (qIcon) {
+              qIcon.classList.remove('rotate-45');
+            }
+          }
+        });
+
+        // Open current FAQ
+        questionRow.classList.add('active');
+        answer.classList.add('active');
+        if (icon) {
+          icon.classList.add('rotate-45');
+        }
+      } else {
+        // Close current FAQ
+        questionRow.classList.remove('active');
+        answer.classList.remove('active');
+        if (icon) {
+          icon.classList.remove('rotate-45');
+        }
+      }
+    });
+  });
 }
 
 function initMobileMenu() {
