@@ -9,117 +9,119 @@ export function Games() {
     
     <section class="games-hero relative">
       <div class="games-hero-container">
-        <img src="/media/games-hero.png" alt="Games Hero" class="w-full">
-        <div class="games-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10">
+        <img src="/media/games-hero.png" alt="Ultrapanda Games Collection - Fish Arcade and Slot Games" class="w-full">
+        <div class="games-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 max-w-4xl px-4">
           <div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Play Game Everytime Always Be Winner And Strong</h1>
-            <p class="text-lg">Improve your gaming skills by playing games that are currently so that you don't go out of style improve skills</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Ultrapanda Games: Premium Fish Arcade & Slot Collection</h1>
+            <p class="text-lg">Discover over 75 premium <strong>Ultrapanda games</strong> including <strong>fish shooting games</strong>, <strong>777 slots</strong>, and <strong>arcade casino titles</strong>. Play anytime, improve your skills, and win big with our diverse gaming library.</p>
           </div>
         </div>
       </div>
     </section>
     
-    <section class="games-main-filter py-8">
-      <div class="games-main-filter-container g-container">
-        <ul class="g-flex flex-wrap justify-center gap-4">
-          <li class="games-filter-btn active cursor-pointer" data-filter="all">
-            <b></b>
-            <span><img src="/ultrapanda/media/all-game-icon.png" alt="All Games"></span>
-            <strong>All Games</strong>
-          </li>
-          <li class="games-filter-btn cursor-pointer" data-filter="popular">
-            <b></b>
-            <span><img src="/ultrapanda/media/popular-game-icon.png" alt="Popular"></span>
-            <strong>Popular</strong>
-          </li>
-          <li class="games-filter-btn cursor-pointer" data-filter="new">
-            <b></b>
-            <span><img src="/ultrapanda/media/new-game-icon.png" alt="New"></span>
-            <strong>New</strong>
-          </li>
-          <li class="games-filter-btn cursor-pointer" data-filter="coming-soon">
-            <b></b>
-            <span><img src="/ultrapanda/media/coming-game-icon.png" alt="Other Games"></span>
-            <strong>Other Games</strong>
-          </li>
-        </ul>
+    <!-- Games Intro Section -->
+    <section class="games-intro py-12">
+      <div class="g-container max-w-4xl mx-auto text-center px-4">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Explore the Ultimate Ultrapanda Games Library</h2>
+        <p class="text-lg leading-relaxed mb-4">
+          At <strong>Ultrapanda</strong>, we curate the finest collection of <strong>online casino games</strong>, <strong>fish arcade shooters</strong>, and <strong>slot machines</strong> to deliver unmatched entertainment and winning opportunities. Whether you're a fan of action-packed <strong>Ocean King fish games</strong>, classic <strong>Ultra Panda 777 slots</strong>, or strategic <strong>arcade casino games</strong>, our platform offers something for every player.
+        </p>
+        <p class="text-lg leading-relaxed">
+          All <strong>Ultrapanda games</strong> are optimized for both desktop and mobile play, ensuring smooth gameplay whether you're at home or on the go. With instant access, secure transactions, and regular game updates, Ultrapanda remains the premier destination for online gaming enthusiasts. <a href="/" class="text-orange hover:underline font-semibold">Return to homepage</a> to learn more about our platform features.
+        </p>
       </div>
     </section>
     
-    <section class="games-filter-body py-12">
-      <div class="games-filter-body-container g-container">
-        <div class="games-filter-body-wrapper">
-          <!-- All Games -->
-          <div class="games-filter-box first-game-box active">
-            <div class="games-filter-box-img g-flex flex-wrap gap-4">
-              ${Array.from({ length: gamesData.gameCounts.all }, (_, i) => `
-                <div class="game-box">
-                  <a href="${config.links.signUp}" target="_blank">
-                    <img src="/media/games/all/${i + 1}.jpg" alt="Game ${i + 1}" class="rounded-lg">
-                  </a>
-                </div>
-              `).join('')}
-            </div>
+    <!-- Game Categories Section -->
+    <section class="game-categories py-12 bg-gray-900">
+      <div class="g-container">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Ultrapanda Game Categories</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4 text-orange">Fish Arcade Games</h3>
+            <p class="mb-4">Experience the thrill of <strong>fish shooting games</strong> like Ocean King, where precision and strategy lead to big wins. These action-packed <strong>arcade fish shooters</strong> feature stunning graphics, exciting gameplay, and lucrative bonus rounds.</p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li>Ocean King - Deep sea adventure</li>
+              <li>Hai Di Lao - Premium fish shooter</li>
+              <li>Multiple themed variations</li>
+            </ul>
           </div>
-          
-          <!-- Popular Games -->
-          <div class="games-filter-box second-game-box">
-            <div class="games-filter-box-img g-flex flex-wrap gap-4">
-              ${Array.from({ length: gamesData.gameCounts.popular }, (_, i) => `
-                <div class="game-box">
-                  <a href="${config.links.signUp}" target="_blank">
-                    <img src="/media/games/popular/${i + 1}.jpg" alt="Popular Game ${i + 1}" class="rounded-lg">
-                  </a>
-                </div>
-              `).join('')}
-            </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4 text-orange">777 Slot Machines</h3>
+            <p class="mb-4">Spin the reels on classic and modern <strong>Ultra Panda slots</strong> featuring various themes, bonus features, and progressive jackpots. Our <strong>777 casino games</strong> offer multiple paylines and exciting winning combinations.</p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li>Golden Legend Plus</li>
+              <li>Triple Supreme Xtreme</li>
+              <li>Lucky Shamrock & more</li>
+            </ul>
           </div>
-          
-          <!-- New Games -->
-          <div class="games-filter-box third-game-box">
-            <div class="games-filter-box-img g-flex flex-wrap gap-4">
-              ${Array.from({ length: gamesData.gameCounts.new }, (_, i) => `
-                <div class="game-box">
-                  <a href="${config.links.signUp}" target="_blank">
-                    <img src="/media/games/new/${i + 1}.jpg" alt="New Game ${i + 1}" class="rounded-lg">
-                  </a>
-                </div>
-              `).join('')}
-            </div>
-          </div>
-          
-          <!-- Coming Soon Games -->
-          <div class="games-filter-box four-game-box">
-            <div class="games-filter-box-img g-flex flex-wrap gap-4">
-              ${Array.from({ length: gamesData.gameCounts.comingSoon }, (_, i) => `
-                <div class="game-box">
-                  <a href="${config.links.signUp}" target="_blank">
-                    <img src="/media/games/coming-soon/${i + 1}.jpg" alt="Coming Soon Game ${i + 1}" class="rounded-lg">
-                  </a>
-                </div>
-              `).join('')}
-            </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-2xl font-bold mb-4 text-orange">Arcade Casino Games</h3>
+            <p class="mb-4">Enjoy a diverse selection of <strong>arcade casino titles</strong> including adventure games, themed slots, and interactive experiences. These games combine entertainment with rewarding gameplay mechanics.</p>
+            <ul class="list-disc list-inside space-y-2 text-sm">
+              <li>Eyes of Fortune</li>
+              <li>Iceland Adventure</li>
+              <li>Easter & seasonal games</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
     
     <section class="games-screenshots py-12">
-      <h4 class="text-3xl font-bold text-center mb-8">Game Screenshots</h4>
-      <div class="games-screenshots-container g-flex flex-wrap justify-center gap-4">
-        ${[1, 2, 3, 4].map(i => `
-          <div class="games-screenshot-box">
-            <img src="/media/screenshot-${i}.png" alt="Screenshot ${i}">
+      <div class="games-screenshots-container g-container">
+        <h2 class="text-3xl font-bold text-center mb-4">All Ultrapanda Games</h2>
+        <p class="text-center mb-8 max-w-2xl mx-auto">Browse our complete collection of <strong>75+ Ultrapanda games</strong>. From popular favorites to new releases, discover your next gaming adventure. Each game is carefully selected to ensure quality, fairness, and maximum entertainment value.</p>
+        <div class="games-screenshots-wrapper g-flex flex-wrap justify-center gap-4">
+          ${Array.from({ length: gamesData.gameCounts.all }, (_, i) => `
+            <div class="game-screenshot-box">
+              <a href="${config.links.signUp}" target="_blank">
+                <img src="/media/games/all/${i + 1}.jpg" alt="Game ${i + 1}">
+              </a>
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    </section>
+    
+    <!-- Games FAQ Section -->
+    <section class="games-faq py-12 bg-gray-900">
+      <div class="g-container max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions About Ultrapanda Games</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">How many games does Ultrapanda offer?</h3>
+            <p>Ultrapanda features over 75 premium games including <strong>fish arcade games</strong>, <strong>777 slot machines</strong>, and <strong>arcade casino titles</strong>. Our library is regularly updated with new releases and popular favorites to keep your gaming experience fresh and exciting.</p>
           </div>
-        `).join('')}
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">What are the most popular Ultrapanda games?</h3>
+            <p>Our most played games include <strong>Ocean King</strong> (fish shooting), <strong>Golden Legend Plus</strong> (slots), <strong>Hai Di Lao</strong> (arcade), and <strong>Triple Supreme Xtreme</strong> (777 slots). These titles consistently rank high in player engagement and satisfaction. Visit our <a href="/" class="text-orange hover:underline">homepage</a> to see featured games.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">Can I play Ultrapanda games on mobile?</h3>
+            <p>Yes! All <strong>Ultrapanda games</strong> are fully optimized for mobile devices. You can play directly through your mobile browser or download the <strong>Ultra Panda Mobi</strong> app for an enhanced mobile gaming experience with faster loading times and smoother gameplay.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">Do I need to download games to play?</h3>
+            <p>No downloads required for most games. You can play <strong>Ultrapanda games</strong> instantly through your web browser. However, downloading the <strong>Ultrapanda app</strong> provides additional features, faster performance, and offline access to certain game modes.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">Are Ultrapanda games fair and secure?</h3>
+            <p>Absolutely. All <strong>Ultrapanda games</strong> use certified random number generators (RNG) to ensure fair play. Our platform employs advanced security measures to protect your account and transactions. We're committed to providing a safe, transparent gaming environment.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">How do I find specific game types?</h3>
+            <p>Our games are organized by categories: <strong>fish arcade games</strong>, <strong>777 slots</strong>, and <strong>arcade casino titles</strong>. You can browse all games above or use our search feature to find specific titles. For gaming tips and strategies, check out our <a href="/blog" class="text-orange hover:underline">Ultrapanda blog</a>.</p>
+          </div>
+        </div>
       </div>
     </section>
     
     <section class="exp-main py-12">
       <div class="exp-container g-container text-center">
-        <h4 class="text-3xl font-bold mb-4">Have An Unforgettable <br>Experience</h4>
-        <p class="mb-6">Have an unforgettable experience and play now to <br>get attractive promos</p>
-        <a href="${config.links.signUp}" target="_blank" class="inline-block px-8 py-3 bg-orange text-white rounded mb-12">Get Started</a>
+        <h2 class="text-3xl font-bold mb-4">Have An Unforgettable <br>Gaming Experience</h2>
+        <p class="mb-6 max-w-2xl mx-auto">Join thousands of players enjoying premium <strong>Ultrapanda games</strong> every day. Start playing now to unlock exclusive bonuses, promotions, and rewards. Experience the best in online gaming with Ultrapanda.</p>
+        <a href="${config.links.signUp}" target="_blank" class="inline-block px-8 py-3 bg-orange text-white rounded mb-12 hover:bg-orange-light transition-colors">Get Started</a>
         <div class="exp-services">
           <h4 class="text-2xl font-bold mb-8">Our Services</h4>
           <div class="services-wrapper g-flex flex-wrap justify-center gap-6">
@@ -149,18 +151,7 @@ export function Games() {
 }
 
 export function initGames() {
-  const filterBtns = document.querySelectorAll('.games-filter-btn');
-  const filterBoxes = document.querySelectorAll('.games-filter-box');
-
-  filterBtns.forEach((btn, index) => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      filterBoxes.forEach(box => box.classList.remove('active'));
-      filterBoxes[index].classList.add('active');
-    });
-  });
+  // No filter functionality needed anymore
 }
 
 

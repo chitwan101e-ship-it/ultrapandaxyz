@@ -329,6 +329,49 @@
   .messager img {
     @apply w-12 h-12 hover:scale-110 transition-transform;
   }
+
+  /* Game Screenshots Section - Side by Side like Home Page */
+  .games-screenshots {
+    @apply text-center py-12;
+  }
+
+  .games-screenshots h4 {
+    @apply text-3xl font-bold mb-8 relative;
+  }
+
+  .games-screenshots h4::after {
+    content: '';
+    @apply absolute left-1/2 bottom-0 transform -translate-x-1/2;
+    width: 20%;
+    height: 3px;
+    background: linear-gradient(to right, #F45127, #F7B33D);
+    box-shadow: 0 3px 6px #173620;
+  }
+
+  .games-screenshots-wrapper {
+    @apply flex flex-wrap justify-center gap-4;
+  }
+
+  .game-screenshot-box {
+    @apply relative overflow-hidden rounded-lg transition-all duration-300;
+    flex: 0 0 calc(25% - 1rem);
+    min-width: 200px;
+    max-width: 250px;
+  }
+
+  @media (max-width: 768px) {
+    .game-screenshot-box {
+      flex: 0 0 calc(50% - 0.5rem);
+    }
+  }
+
+  .game-screenshot-box:hover {
+    transform: scale(1.05);
+  }
+
+  .game-screenshot-box img {
+    @apply w-full h-auto rounded-lg;
+  }
 }
 
 @keyframes simpleLavaFlow {

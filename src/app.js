@@ -39,14 +39,46 @@ export function initApp() {
     </section>
     
     <!-- SEO Intro Section -->
-    <div class="seo-intro py-8 px-4 text-center">
-      <p class="text-lg">${config.seoIntro}</p>
-    </div>
+    <section class="seo-intro py-12 px-4">
+      <div class="g-container">
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Welcome to Ultrapanda: Your Premier Online Gaming & Entertainment Platform</h1>
+        <div class="max-w-4xl mx-auto text-center space-y-4">
+          <p class="text-lg leading-relaxed">
+            <strong>Ultrapanda</strong> is the trusted destination for premium <strong>online fish arcade games</strong>, exciting <strong>slot machines</strong>, and immersive <strong>777 casino experiences</strong>. As the official <strong>Ultrapanda Club 777</strong> platform, we deliver instant access to hundreds of games, secure transactions, and exclusive bonuses—all without requiring agents or complicated registration processes.
+          </p>
+          <p class="text-lg leading-relaxed">
+            Whether you're seeking the thrill of <strong>Ocean King fish shooting games</strong>, classic <strong>Ultra Panda slots</strong>, or the latest <strong>arcade casino titles</strong>, Ultrapanda provides a seamless gaming experience optimized for both desktop and mobile devices. Join thousands of satisfied players who choose Ultrapanda for reliable gameplay, fast payouts, and 24/7 customer support.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Why Choose Ultrapanda Section -->
+    <section class="why-choose py-12 bg-gray-900">
+      <div class="g-container">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Why Choose Ultrapanda for Your Gaming Experience?</h2>
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-4 text-orange">Instant Access, No Agents Required</h3>
+            <p>Unlike traditional gaming platforms, Ultrapanda eliminates the need for agents. Register directly through our secure platform and start playing immediately. Our streamlined <strong>Ultrapanda login</strong> process gets you into the action in seconds.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-4 text-orange">Massive Game Library</h3>
+            <p>With over 75 premium games including <strong>fish arcade shooters</strong>, <strong>777 slot machines</strong>, and <strong>arcade casino classics</strong>, Ultrapanda offers unmatched variety. Discover new favorites weekly with our regularly updated game catalog.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-4 text-orange">Secure & Trusted Platform</h3>
+            <p>Your security is our priority. Ultrapanda employs advanced encryption and secure payment processing to protect your data and transactions. Play with confidence knowing you're on the official <strong>Ultrapanda.xyz</strong> platform.</p>
+          </div>
+        </div>
+      </div>
+    </section>
     
     <!-- most popular games -->
     <section class="most-popular py-12">
       <div class="most-popular-container g-container">
-        <h2 class="text-3xl font-bold text-center mb-8">Top Ultrapanda <span class="text-orange">Arcade Games</span></h2>
+        <h2 class="text-3xl font-bold text-center mb-4">Top Ultrapanda <span class="text-orange">Arcade Games</span></h2>
+        <p class="text-center mb-8 max-w-2xl mx-auto">Experience the most popular <strong>Ultrapanda games</strong> loved by players worldwide. From action-packed <strong>fish shooting games</strong> to thrilling <strong>slot machines</strong>, these titles deliver exceptional gameplay and winning opportunities.</p>
         <div class="most-popular-wrapper g-flex flex-wrap justify-center gap-4">
           ${gamesData.mostPopular.map(game => `
             <div class="most-popularbox relative">
@@ -68,15 +100,18 @@ export function initApp() {
     <section class="dive-into-main py-12">
       <div class="dive-into-container g-container g-flex flex-wrap items-center gap-8">
         <div class="dive-into-img flex-1 min-w-[300px]">
-          <img src="/media/home-dive.png" alt="">
+          <img src="/media/home-dive.png" alt="Ocean King fish shooting game on Ultrapanda platform">
         </div>
         <div class="dive-into-content flex-1 min-w-[300px]">
           <h2 class="text-3xl font-bold mb-4">Dive into the Thrilling <span class="text-[#ff7f22]">Underwater Adventure!</span></h2>
           <p class="mb-4">
             Get ready to explore the deep sea with <strong>Ocean King</strong> – one of Ultrapanda's most popular <strong>online fish shooting games</strong>. Designed for players who crave action, strategy, and big wins, Ocean King delivers nonstop entertainment. Use your aim and firepower to catch exotic sea creatures, unlock hidden bonuses, and climb the leaderboards.
           </p>
-          <p>
+          <p class="mb-4">
             Whether you're playing from desktop or mobile, Ultrapanda gives you instant access to this fast-paced <strong>arcade fish shooter</strong>. No downloads, no agents – just tap and play. Join thousands of gamers choosing Ultrapanda for their go-to <strong>fish game casino</strong>. Dive in today and start collecting <strong>real rewards, bonus coins, and exclusive offers</strong>.
+          </p>
+          <p>
+            Looking for more gaming options? Explore our complete <a href="/games" class="text-orange hover:underline font-semibold">Ultrapanda games collection</a> featuring slots, arcade games, and more. For the latest tips and strategies, visit our <a href="/blog" class="text-orange hover:underline font-semibold">Ultrapanda blog</a>.
           </p>
         </div>
       </div>
@@ -85,7 +120,8 @@ export function initApp() {
     <!-- game recommendation -->
     <section class="game-recomendation py-12">
       <div class="game-recomendation-container g-container">
-        <h3 class="text-3xl font-bold text-center mb-8">Game Recommend For <br>You This Week</h3>
+        <h2 class="text-3xl font-bold text-center mb-4">Game Recommendations For <br>You This Week</h2>
+        <p class="text-center mb-8 max-w-2xl mx-auto">Our team handpicks the best <strong>Ultrapanda games</strong> each week based on player feedback, payout rates, and entertainment value. These featured titles offer exceptional gameplay and winning potential.</p>
         <div class="game-recomendation-wrapper g-flex flex-wrap justify-center gap-6">
           ${gamesData.recommended.map(game => `
             <div class="game-recomendation-box bg-gray-800 rounded-lg overflow-hidden">
@@ -117,8 +153,8 @@ export function initApp() {
         <div class="most-played-design2 absolute">
           <img src="/media/most-played-design2.svg" alt="">
         </div>
-        <h3 class="text-3xl font-bold text-center mb-4">Most Played Games <br>Of The Year</h3>
-        <p class="text-center mb-8 max-w-2xl mx-auto">We have data on the most played games this year and as a result, games about battles and wars are very popular with gamers at this time, so we recommend this game into your cart to be used as your game.</p>
+        <h2 class="text-3xl font-bold text-center mb-4">Most Played Games <br>Of The Year</h2>
+        <p class="text-center mb-8 max-w-2xl mx-auto">Based on player data and engagement metrics, these <strong>Ultrapanda games</strong> have dominated the leaderboards throughout the year. Action-packed battle and strategy games continue to be favorites among our community, offering both excitement and rewarding gameplay experiences.</p>
         <div class="most-played-games-wrapper g-flex flex-wrap justify-center gap-6">
           ${gamesData.mostPlayed.map(game => `
             <div class="most-played-games">
@@ -132,11 +168,40 @@ export function initApp() {
       </div>
     </section>
     
+    <!-- Home FAQ Section -->
+    <section class="home-faq py-12 bg-gray-900">
+      <div class="g-container max-w-4xl mx-auto">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions About Ultrapanda</h2>
+        <div class="space-y-6">
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">Is Ultrapanda.xyz the official site?</h3>
+            <p>Yes – Ultrapanda.xyz is the newest, official version of the Ultrapanda gaming platform. We provide secure access to all <strong>Ultrapanda Club 777</strong> games, features, and services without requiring agents or third-party intermediaries.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">Do I need an agent to play on Ultrapanda?</h3>
+            <p>No agents are required. You can register and play instantly through our secure platform. Simply create your account, make a deposit, and start enjoying our extensive library of <strong>fish arcade games</strong> and <strong>slot machines</strong> immediately.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">What types of games does Ultrapanda offer?</h3>
+            <p>Ultrapanda features a diverse collection including <strong>fish shooting games</strong> like Ocean King, classic and modern <strong>777 slot machines</strong>, <strong>arcade casino games</strong>, and themed adventure titles. Browse our complete <a href="/games" class="text-orange hover:underline">games library</a> to discover all available titles.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">How do I download the Ultrapanda app?</h3>
+            <p>Visit our official <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">Facebook page</a> to download the <strong>Ultra Panda Mobi</strong> app. The app provides optimized mobile gaming with full access to all Ultrapanda features and games.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">What bonuses does Ultrapanda offer?</h3>
+            <p>New players receive a <strong>100% sign-up bonus</strong> on their first deposit. We also offer weekly promotions, reload bonuses, and special event rewards. Check our <a href="/blog" class="text-orange hover:underline">blog</a> for the latest bonus announcements and promotional offers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
     <section class="exp-main py-12">
       <div class="exp-container g-container text-center">
-        <h4 class="text-3xl font-bold mb-4">Have An Unforgettable <br>Experience</h4>
-        <p class="mb-6">Have an unforgettable experience and play now to <br>get attractive promos</p>
-        <a href="${config.links.signUp}" target="_blank" class="inline-block px-8 py-3 bg-orange text-white rounded mb-12">Get Started</a>
+        <h2 class="text-3xl font-bold mb-4">Have An Unforgettable <br>Gaming Experience</h2>
+        <p class="mb-6 max-w-2xl mx-auto">Join the Ultrapanda community today and experience premium online gaming with instant access, secure transactions, and exclusive bonuses. Start playing now to unlock attractive promotions and rewards.</p>
+        <a href="${config.links.signUp}" target="_blank" class="inline-block px-8 py-3 bg-orange text-white rounded mb-12 hover:bg-orange-light transition-colors">Get Started</a>
         <div class="exp-services">
           <h4 class="text-2xl font-bold mb-8">Our Services</h4>
           <div class="services-wrapper g-flex flex-wrap justify-center gap-6">
