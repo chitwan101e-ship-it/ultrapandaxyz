@@ -179,6 +179,46 @@
     padding: 1rem;
   }
 
+  /* Footer Styles */
+  .main-footer {
+    @apply relative mt-auto;
+  }
+
+  .footer-logo-section {
+    @apply relative;
+  }
+
+  .footer-logo-wrapper {
+    @apply relative inline-block;
+  }
+
+  .footer-logo-badge {
+    @apply relative z-10;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  }
+
+  .footer-copyright-top {
+    @apply hidden lg:block;
+  }
+
+  @media (max-width: 1024px) {
+    .footer-copyright-top {
+      @apply block relative transform-none translate-x-0 ml-0 mt-4;
+    }
+  }
+
+  .footer-disclaimer {
+    @apply text-gray-300;
+  }
+
+  .footer-disclaimer a {
+    @apply text-orange hover:underline;
+  }
+
+  .footer-disclaimer strong {
+    @apply text-white font-semibold;
+  }
+
   .faq-answer-content {
     @apply pt-2;
   }
