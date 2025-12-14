@@ -115,41 +115,21 @@ export function ContactUs(currentPath = '/contact-us') {
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-4">Frequently Asked Questions</h2>
         <p class="text-center mb-8 max-w-2xl mx-auto">Find quick answers to common questions about <strong>Ultrapanda login</strong>, <strong>Ultra Panda games</strong>, account management, and platform features. If you don't find what you're looking for, don't hesitate to <a href="#contact-form" class="text-orange hover:underline">contact our support team</a>.</p>
         
-        <!-- Desktop FAQ -->
-        <div class="faq-wrapper desk-faq g-flex hidden md:flex gap-8">
-          <div class="faq-que flex-1">
-            <ul>
-              ${faqs.map((faq, index) => `
-                <li class="faq-question cursor-pointer p-4 mb-2 bg-gray-800 rounded ${index === 0 ? 'active' : ''}" data-index="${index}">
-                  ${faq.question}
-                </li>
-              `).join('')}
-            </ul>
-          </div>
-          <div class="faq-answers flex-1">
-            ${faqs.map((faq, index) => `
-              <div class="faq-ans p-4 bg-gray-800 rounded ${index === 0 ? 'active' : ''}" data-index="${index}">
-                <p>${faq.answer}</p>
-                <div class="faq-ans-design"></div>
+        <!-- FAQ - Vertical Layout (Question followed by Answer) -->
+        <div class="faq-wrapper-vertical max-w-4xl mx-auto">
+          ${faqs.map((faq, index) => `
+            <div class="faq-item-vertical mb-4 bg-gray-800 rounded-lg overflow-hidden">
+              <div class="faq-question-vertical cursor-pointer p-4 flex justify-between items-center ${index === 0 ? 'active' : ''}" data-index="${index}">
+                <h3 class="text-lg font-semibold text-white pr-4">${faq.question}</h3>
+                <i class="bi bi-chevron-down text-orange transition-transform ${index === 0 ? 'rotate-180' : ''}"></i>
               </div>
-            `).join('')}
-          </div>
-        </div>
-        
-        <!-- Mobile FAQ -->
-        <div class="mobile-faq md:hidden">
-          <ul>
-            ${faqs.map((faq, index) => `
-              <li class="mobile-faq-item cursor-pointer p-4 mb-2 bg-gray-800 rounded ${index === 0 ? 'active' : ''}">
-                <span>${faq.question}</span>
-                <i class="bi bi-plus-lg float-right"></i>
-              </li>
-              <div class="mobile-faq-ans p-4 bg-gray-700 rounded mb-2 ${index === 0 ? 'active' : ''}">
-                <p>${faq.answer}</p>
-                <div class="faq-ans-design"></div>
+              <div class="faq-answer-vertical bg-gray-700 ${index === 0 ? 'active' : ''}" data-index="${index}">
+                <div class="faq-answer-content p-4">
+                  <p class="text-gray-300 leading-relaxed">${faq.answer}</p>
+                </div>
               </div>
-            `).join('')}
-          </ul>
+            </div>
+          `).join('')}
         </div>
       </div>
     </section>
@@ -223,34 +203,30 @@ export function ContactUs(currentPath = '/contact-us') {
 }
 
 export function initContactUs() {
-  // Desktop FAQ
-  const faqQuestions = document.querySelectorAll('.faq-question');
-  const faqAnswers = document.querySelectorAll('.faq-ans');
+  // FAQ Accordion - Vertical Layout
+  const faqQuestions = document.querySelectorAll('.faq-question-vertical');
+  const faqAnswers = document.querySelectorAll('.faq-answer-vertical');
 
   faqQuestions.forEach((question, index) => {
+    const answer = faqAnswers[index];
+    const icon = question.querySelector('i');
+
     question.addEventListener('click', () => {
-      faqQuestions.forEach(q => q.classList.remove('active'));
-      faqAnswers.forEach(a => a.classList.remove('active'));
+      const isActive = question.classList.contains('active');
 
-      question.classList.add('active');
-      faqAnswers[index].classList.add('active');
-    });
-  });
+      // Close all FAQs
+      faqQuestions.forEach((q, i) => {
+        q.classList.remove('active');
+        faqAnswers[i].classList.remove('active');
+        const qIcon = q.querySelector('i');
+        if (qIcon) qIcon.classList.remove('rotate-180');
+      });
 
-  // Mobile FAQ
-  const mobileFaqItems = document.querySelectorAll('.mobile-faq-item');
-
-  mobileFaqItems.forEach((item, index) => {
-    item.addEventListener('click', () => {
-      const answer = item.nextElementSibling;
-      const isActive = item.classList.contains('active');
-
-      document.querySelectorAll('.mobile-faq-item').forEach(i => i.classList.remove('active'));
-      document.querySelectorAll('.mobile-faq-ans').forEach(a => a.classList.remove('active'));
-
+      // Toggle current FAQ
       if (!isActive) {
-        item.classList.add('active');
+        question.classList.add('active');
         answer.classList.add('active');
+        if (icon) icon.classList.add('rotate-180');
       }
     });
   });
