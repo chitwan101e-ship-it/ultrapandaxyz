@@ -190,8 +190,10 @@
   }
 
   .mobile-nav-btn span {
-    @apply block w-full h-0.5 bg-white transition-all duration-300;
+    @apply block bg-white transition-all duration-300;
     display: block;
+    width: 20px;
+    height: 2px;
   }
 
   .mobile-nav-btn:hover span {
