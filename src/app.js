@@ -166,23 +166,38 @@ export function initApp(currentPath = '/') {
     </section>
     
     <!-- Why Choose Ultrapanda Section -->
-    <section class="why-choose py-12 bg-gray-900">
+    <section class="why-choose py-16 bg-black">
       <div class="g-container max-w-6xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Why Choose Ultrapanda for Your Gaming Experience?</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Why Choose Ultrapanda for Your Gaming Experience?</h2>
         <div class="grid md:grid-cols-3 gap-8">
-          <div class="why-choose-card">
+          <div class="why-choose-card bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-orange transition-all duration-300">
+            <div class="why-choose-icon-wrapper mb-6">
+              <div class="why-choose-icon-circle bg-orange bg-opacity-20 p-4 rounded-full inline-flex items-center justify-center">
+                <i class="bi bi-box-arrow-in-right text-orange text-4xl"></i>
+              </div>
+            </div>
             <h3 class="text-2xl font-bold mb-4 text-orange">Ultrapanda Login & Instant Access</h3>
             <p class="text-white leading-relaxed">
               No agents required. Log in directly through our secure platform and start playing immediately. Our streamlined <strong>Ultrapanda mobi login</strong> process gets you into the action quickly, whether you're playing <strong>Ultrapanda online</strong> or using the <strong>Ultra Panda Mobi</strong> app.
             </p>
           </div>
-          <div class="why-choose-card">
+          <div class="why-choose-card bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-orange transition-all duration-300">
+            <div class="why-choose-icon-wrapper mb-6">
+              <div class="why-choose-icon-circle bg-orange bg-opacity-20 p-4 rounded-full inline-flex items-center justify-center">
+                <i class="bi bi-download text-orange text-4xl"></i>
+              </div>
+            </div>
             <h3 class="text-2xl font-bold mb-4 text-orange">Download Ultrapanda or Play Online</h3>
             <p class="text-white leading-relaxed">
               Download the <strong>Ultra Panda Mobi</strong> app for mobile gaming or play <strong>Ultrapanda online</strong> instantly from your browser. With over 75 premium games including <strong>fish arcade shooters</strong>, <strong>777 slots</strong>, and <strong>arcade casino classics</strong>, experience unmatched variety in <strong>Ultrapanda games</strong>.
             </p>
           </div>
-          <div class="why-choose-card">
+          <div class="why-choose-card bg-gray-900 p-8 rounded-lg border border-gray-800 hover:border-orange transition-all duration-300">
+            <div class="why-choose-icon-wrapper mb-6">
+              <div class="why-choose-icon-circle bg-orange bg-opacity-20 p-4 rounded-full inline-flex items-center justify-center">
+                <i class="bi bi-shield-lock-fill text-orange text-4xl"></i>
+              </div>
+            </div>
             <h3 class="text-2xl font-bold mb-4 text-orange">Secure Ultrapanda Platform</h3>
             <p class="text-white leading-relaxed">
               Your security is our priority. <strong>Ultrapanda</strong> employs advanced encryption and secure payment processing to protect your data and transactions. Play with confidence knowing you're on the official <strong>Ultrapanda.xyz</strong> platform. Your <strong>Ultrapanda login</strong> credentials are always protected.
