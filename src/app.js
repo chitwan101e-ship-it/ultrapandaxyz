@@ -33,12 +33,12 @@ export function initApp(currentPath = '/') {
       </div>
       
       <!-- Hero Content - Moved from SEO Intro Section -->
-      <div class="hero-content-overlay absolute inset-0 flex items-center justify-center z-20 px-4">
-        <div class="hero-text-content max-w-5xl mx-auto text-center text-white">
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-            Ultrapanda - Play Online Games | Download<br>Ultra Panda Mobi App
+      <div class="hero-content-overlay absolute inset-0 flex items-center justify-center z-20 px-4 md:px-4 py-4 md:py-0">
+        <div class="hero-text-content max-w-5xl mx-auto text-center text-white w-full">
+          <h1 class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 leading-tight px-2 md:px-0">
+            Ultrapanda - Play Online Games | Download<br class="hidden md:block">Ultra Panda Mobi App
           </h1>
-          <div class="space-y-4 text-lg md:text-xl leading-relaxed">
+          <div class="space-y-3 md:space-y-4 text-sm md:text-lg lg:text-xl leading-relaxed px-2 md:px-0">
             <p>
               <strong>Ultrapanda</strong> is your premier destination for premium <strong>online fish arcade games</strong>, exciting <strong>777 slots</strong>, and immersive casino experiences. Play <strong>Ultrapanda online</strong> instantly or download the <strong>Ultra Panda Mobi</strong> app for mobile gaming. As the official <strong>Ultrapanda.xyz</strong> platform, we deliver instant access to hundreds of games, secure <strong>Ultrapanda login</strong>, and exclusive bonuses—all without requiring agents.
             </p>
