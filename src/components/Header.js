@@ -23,7 +23,7 @@ export function Header(currentPath = '/') {
             <i class="bi bi-star-fill"></i>
             <span>Play now</span>
           </button>
-          <button class="mobile-nav-btn" id="mobile-nav-toggle">
+          <button class="mobile-nav-btn" id="mobile-nav-toggle" aria-label="Toggle menu">
             <span></span>
             <span></span>
             <span></span>
