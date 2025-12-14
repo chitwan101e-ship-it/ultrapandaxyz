@@ -199,6 +199,19 @@
     @apply text-white font-semibold;
   }
 
+  /* Support Icons */
+  .support-icon-wrapper {
+    @apply flex justify-center items-center;
+  }
+
+  .support-icon-wrapper i {
+    @apply transition-transform duration-300;
+  }
+
+  .support-icon-wrapper:hover i {
+    @apply scale-110 text-orange;
+  }
+
   /* Footer Styles */
   .main-footer {
     @apply relative mt-auto;

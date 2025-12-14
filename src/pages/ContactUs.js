@@ -88,19 +88,25 @@ export function ContactUs(currentPath = '/contact-us') {
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Multiple Ways to Reach Us</h2>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div class="bg-gray-800 p-6 rounded-lg text-center">
-            <div class="text-4xl mb-4">📧</div>
+            <div class="support-icon-wrapper mb-4">
+              <i class="bi bi-envelope-fill text-white text-5xl"></i>
+            </div>
             <h3 class="text-xl font-bold mb-4 text-orange">Email Support</h3>
             <p class="mb-4">Send us a detailed message via email for comprehensive assistance with your inquiries.</p>
             <a href="mailto:support@ultrapanda.xyz" class="text-orange hover:underline font-semibold">support@ultrapanda.xyz</a>
           </div>
           <div class="bg-gray-800 p-6 rounded-lg text-center">
-            <div class="text-4xl mb-4">💬</div>
+            <div class="support-icon-wrapper mb-4">
+              <i class="bi bi-chat-dots-fill text-white text-5xl"></i>
+            </div>
             <h3 class="text-xl font-bold mb-4 text-orange">Facebook Messenger</h3>
             <p class="mb-4">Connect with us on our official Facebook page for quick responses and account assistance.</p>
             <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline font-semibold">Visit Facebook Page</a>
           </div>
           <div class="bg-gray-800 p-6 rounded-lg text-center">
-            <div class="text-4xl mb-4">📝</div>
+            <div class="support-icon-wrapper mb-4">
+              <i class="bi bi-file-earmark-text-fill text-white text-5xl"></i>
+            </div>
             <h3 class="text-xl font-bold mb-4 text-orange">Contact Form</h3>
             <p class="mb-4">Use our contact form below for structured inquiries. We'll respond within 24 hours.</p>
             <a href="#contact-form" class="text-orange hover:underline font-semibold">Fill Out Form</a>
