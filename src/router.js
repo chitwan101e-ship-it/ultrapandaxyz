@@ -78,6 +78,7 @@ function updateSEO(path) {
   const data = seoData[path] || seoData['/'];
   document.title = data.title;
 
+  // Update or create meta description
   const metaDescription = document.querySelector('meta[name="description"]');
   if (metaDescription) {
     metaDescription.setAttribute('content', data.description);
@@ -87,17 +88,36 @@ function updateSEO(path) {
     meta.content = data.description;
     document.head.appendChild(meta);
   }
+
+  // Update or create canonical URL (prevents redirect issues)
+  const canonicalUrl = `https://ultrapanda.xyz${path === '/' ? '' : path}`;
+  let canonicalLink = document.querySelector('link[rel="canonical"]');
+  if (canonicalLink) {
+    canonicalLink.setAttribute('href', canonicalUrl);
+  } else {
+    canonicalLink = document.createElement('link');
+    canonicalLink.rel = 'canonical';
+    canonicalLink.href = canonicalUrl;
+    document.head.appendChild(canonicalLink);
+  }
 }
 
 export function initRouter() {
+  // Normalize path - remove trailing slashes except for root
+  function normalizePath(path) {
+    if (path === '/' || path === '') return '/';
+    return path.replace(/\/+$/, '');
+  }
+
   // Handle initial load
-  const path = window.location.pathname;
+  const path = normalizePath(window.location.pathname);
   updateSEO(path);
 
   if (routes[path]) {
     routes[path]();
   } else {
-    routes['/ultrapanda/']();
+    // Fallback to home page instead of non-existent route
+    routes['/']();
   }
 
   // Handle navigation clicks
@@ -105,8 +125,16 @@ export function initRouter() {
     const link = e.target.closest('a[href^="/"]');
     if (link) {
       e.preventDefault();
-      const path = link.getAttribute('href');
-      window.history.pushState({}, '', path);
+      const href = link.getAttribute('href');
+      const path = normalizePath(href);
+      
+      // Update URL without trailing slash
+      if (path !== href) {
+        window.history.replaceState({}, '', path);
+      } else {
+        window.history.pushState({}, '', path);
+      }
+      
       updateSEO(path);
 
       if (routes[path]) {
@@ -119,7 +147,7 @@ export function initRouter() {
 
   // Handle browser back/forward
   window.addEventListener('popstate', () => {
-    const path = window.location.pathname;
+    const path = normalizePath(window.location.pathname);
     updateSEO(path);
     if (routes[path]) {
       routes[path]();
