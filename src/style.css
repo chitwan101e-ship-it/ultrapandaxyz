@@ -151,20 +151,56 @@
     max-height: 50px;
   }
 
-  .mobile-nav {
-    @apply flex flex-col md:hidden cursor-pointer z-50;
-    width: 30px;
-    height: 24px;
-    justify-content: space-between;
+  .header-mobile-buttons {
+    @apply flex md:hidden items-center gap-3;
   }
 
-  .mobile-nav span {
+  .play-now-btn-mobile {
+    @apply flex items-center gap-2 px-4 py-2 rounded-lg text-white font-semibold transition-all duration-300;
+    background: linear-gradient(135deg, #F45127 0%, #F7B33D 100%);
+    border: none;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+
+  .play-now-btn-mobile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(244, 81, 39, 0.4);
+  }
+
+  .play-now-btn-mobile i {
+    font-size: 1rem;
+  }
+
+  .mobile-nav-btn {
+    @apply flex flex-col justify-center items-center cursor-pointer;
+    width: 44px;
+    height: 44px;
+    background: rgba(22, 21, 21, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    padding: 10px;
+    gap: 4px;
+    transition: all 0.3s ease;
+  }
+
+  .mobile-nav-btn:hover {
+    background: rgba(22, 21, 21, 0.95);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  .mobile-nav-btn span {
     @apply block w-full h-0.5 bg-white transition-all duration-300;
     display: block;
   }
 
-  .mobile-nav:hover span {
+  .mobile-nav-btn:hover span {
     @apply bg-orange;
+  }
+
+  /* Legacy mobile-nav for backward compatibility */
+  .mobile-nav {
+    @apply hidden;
   }
 
   .menu {

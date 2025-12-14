@@ -18,11 +18,18 @@ export function Header(currentPath = '/') {
           </a>
           <div class="floating-element"></div>
         </div>
-        <div class="mobile-nav">
-          <span></span>
-          <span></span>
+        <div class="header-mobile-buttons g-flex items-center gap-3">
+          <button class="play-now-btn-mobile" onclick="window.open('${config.links.facebook}', '_blank')">
+            <i class="bi bi-star-fill"></i>
+            <span>Play now</span>
+          </button>
+          <button class="mobile-nav-btn" id="mobile-nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
-        <nav class="menu g-flex">
+        <nav class="menu g-flex" id="mobile-menu">
           <div class="close-menu">
             <i class="bi bi-x-lg"></i>
           </div>
