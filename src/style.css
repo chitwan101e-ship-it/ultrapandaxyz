@@ -461,6 +461,44 @@
     @apply w-12 h-12 hover:scale-110 transition-transform;
   }
 
+  /* Games Hero Banner Styles */
+  .games-hero {
+    @apply relative w-full;
+  }
+
+  .games-hero-container {
+    @apply relative overflow-hidden;
+    max-height: 500px;
+  }
+
+  .games-hero-banner {
+    @apply w-full h-auto object-cover;
+    max-height: 500px;
+    object-position: center;
+  }
+
+  .games-hero-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6));
+  }
+
+  .games-hero-content {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  }
+
+  .games-hero-content strong {
+    @apply text-white font-bold;
+  }
+
+  @media (max-width: 768px) {
+    .games-hero-container {
+      max-height: 400px;
+    }
+    
+    .games-hero-banner {
+      max-height: 400px;
+    }
+  }
+
   /* Game Screenshots Section - Side by Side like Home Page */
   .games-screenshots {
     @apply text-center py-12;
