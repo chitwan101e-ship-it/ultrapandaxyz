@@ -196,7 +196,8 @@
   }
 
   .faq-answer-content strong {
-    @apply text-white font-semibold;
+    @apply text-yellow-400 font-semibold;
+    color: #FACC15;
   }
 
   /* Support Icons */
