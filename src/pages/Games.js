@@ -8,9 +8,11 @@ export function Games(currentPath = '/games') {
     ${Header(currentPath)}
     
     <section class="games-hero relative">
-      <div class="games-hero-container">
-        <img src="/media/games-hero.png" alt="Ultrapanda Games Collection - Fish Arcade and Slot Games" class="w-full">
-        <div class="games-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 max-w-4xl px-4">
+      <div class="games-hero-container relative">
+        <img src="/media/games-hero.png" alt="Ultrapanda Games Collection - Fish Arcade and Slot Games" class="games-hero-banner">
+        <!-- Dark overlay for text prominence -->
+        <div class="games-hero-overlay absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+        <div class="games-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-20 max-w-4xl px-4">
           <div>
             <h1 class="text-4xl md:text-5xl font-bold mb-4">Ultrapanda Games - Play Online Fish Arcade & 777 Slots</h1>
             <p class="text-lg">Discover over 75 premium <strong>Ultrapanda games</strong> including <strong>fish shooting games</strong>, <strong>Ultrapanda 777 slots</strong>, and <strong>arcade casino titles</strong>. Play <strong>Ultrapanda online</strong> instantly or download <strong>Ultra Panda Mobi</strong> app. Play anytime, improve your skills, and win big with our diverse <strong>Ultrapanda</strong> gaming library.</p>
