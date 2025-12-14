@@ -3,17 +3,17 @@ import { Footer } from '../components/Footer.js';
 import gamesData from '../data/games.json';
 import config from '../data/config.json';
 
-export function Games() {
+export function Games(currentPath = '/games') {
   return `
-    ${Header()}
+    ${Header(currentPath)}
     
     <section class="games-hero relative">
       <div class="games-hero-container">
         <img src="/media/games-hero.png" alt="Ultrapanda Games Collection - Fish Arcade and Slot Games" class="w-full">
         <div class="games-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 max-w-4xl px-4">
           <div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Ultrapanda Games: Premium Fish Arcade & Slot Collection</h1>
-            <p class="text-lg">Discover over 75 premium <strong>Ultrapanda games</strong> including <strong>fish shooting games</strong>, <strong>777 slots</strong>, and <strong>arcade casino titles</strong>. Play anytime, improve your skills, and win big with our diverse gaming library.</p>
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Ultrapanda Games - Play Online Fish Arcade & 777 Slots</h1>
+            <p class="text-lg">Discover over 75 premium <strong>Ultrapanda games</strong> including <strong>fish shooting games</strong>, <strong>Ultrapanda 777 slots</strong>, and <strong>arcade casino titles</strong>. Play <strong>Ultrapanda online</strong> instantly or download <strong>Ultra Panda Mobi</strong> app. Play anytime, improve your skills, and win big with our diverse <strong>Ultrapanda</strong> gaming library.</p>
           </div>
         </div>
       </div>
@@ -22,12 +22,12 @@ export function Games() {
     <!-- Games Intro Section -->
     <section class="games-intro py-12">
       <div class="g-container max-w-4xl mx-auto text-center px-4">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Explore the Ultimate Ultrapanda Games Library</h2>
+        <h2 class="text-3xl md:text-4xl font-bold mb-6">Play Ultrapanda Games Online - Fish Arcade & 777 Slots</h2>
         <p class="text-lg leading-relaxed mb-4">
-          At <strong>Ultrapanda</strong>, we curate the finest collection of <strong>online casino games</strong>, <strong>fish arcade shooters</strong>, and <strong>slot machines</strong> to deliver unmatched entertainment and winning opportunities. Whether you're a fan of action-packed <strong>Ocean King fish games</strong>, classic <strong>Ultra Panda 777 slots</strong>, or strategic <strong>arcade casino games</strong>, our platform offers something for every player.
+          At <strong>Ultrapanda</strong>, we curate the finest collection of <strong>online casino games</strong>, <strong>fish arcade shooters</strong>, and <strong>777 slot machines</strong> to deliver unmatched entertainment. Play <strong>Ultrapanda online</strong> instantly or download the <strong>Ultra Panda Mobi</strong> app. Whether you're a fan of action-packed <strong>Ocean King fish games</strong>, classic <strong>Ultrapanda 777 slots</strong>, or strategic <strong>arcade casino games</strong>, our <strong>Ultrapanda games</strong> library offers something for every player.
         </p>
         <p class="text-lg leading-relaxed">
-          All <strong>Ultrapanda games</strong> are optimized for both desktop and mobile play, ensuring smooth gameplay whether you're at home or on the go. With instant access, secure transactions, and regular game updates, Ultrapanda remains the premier destination for online gaming enthusiasts. <a href="/" class="text-orange hover:underline font-semibold">Return to homepage</a> to learn more about our platform features.
+          All <strong>Ultrapanda games</strong> are optimized for both desktop and mobile play. Access <strong>Ultrapanda</strong> through your <strong>Ultrapanda login</strong> to play <strong>Ultrapanda online</strong> or use the <strong>Ultrapanda mobi</strong> app. With instant access, secure transactions, and regular game updates, <strong>Ultrapanda</strong> remains the premier destination for online gaming. <a href="/" class="text-orange hover:underline font-semibold">Return to homepage</a> to learn more about <strong>Ultrapanda</strong> platform features.
         </p>
       </div>
     </section>

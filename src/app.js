@@ -3,11 +3,11 @@ import { Footer } from './components/Footer.js';
 import gamesData from './data/games.json';
 import config from './data/config.json';
 
-export function initApp() {
+export function initApp(currentPath = '/') {
   const app = document.getElementById('app');
 
   app.innerHTML = `
-    ${Header()}
+    ${Header(currentPath)}
     
     <!-- hero section -->
     <section class="home-hero relative">
@@ -41,13 +41,13 @@ export function initApp() {
     <!-- SEO Intro Section -->
     <section class="seo-intro py-12 px-4">
       <div class="g-container">
-        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Welcome to Ultrapanda: Your Premier Online Gaming & Entertainment Platform</h1>
+        <h1 class="text-4xl md:text-5xl font-bold text-center mb-6">Ultrapanda - Play Online Games | Download Ultra Panda Mobi App</h1>
         <div class="max-w-4xl mx-auto text-center space-y-4">
           <p class="text-lg leading-relaxed">
-            <strong>Ultrapanda</strong> is the trusted destination for premium <strong>online fish arcade games</strong>, exciting <strong>slot machines</strong>, and immersive <strong>777 casino experiences</strong>. As the official <strong>Ultrapanda Club 777</strong> platform, we deliver instant access to hundreds of games, secure transactions, and exclusive bonuses—all without requiring agents or complicated registration processes.
+            <strong>Ultrapanda</strong> is your premier destination for premium <strong>online fish arcade games</strong>, exciting <strong>777 slots</strong>, and immersive casino experiences. Play <strong>Ultrapanda online</strong> instantly or download the <strong>Ultra Panda Mobi</strong> app for mobile gaming. As the official <strong>Ultrapanda.xyz</strong> platform, we deliver instant access to hundreds of games, secure <strong>Ultrapanda login</strong>, and exclusive bonuses—all without requiring agents.
           </p>
           <p class="text-lg leading-relaxed">
-            Whether you're seeking the thrill of <strong>Ocean King fish shooting games</strong>, classic <strong>Ultra Panda slots</strong>, or the latest <strong>arcade casino titles</strong>, Ultrapanda provides a seamless gaming experience optimized for both desktop and mobile devices. Join thousands of satisfied players who choose Ultrapanda for reliable gameplay, fast payouts, and 24/7 customer support.
+            Whether you're seeking the thrill of <strong>Ocean King fish shooting games</strong>, classic <strong>Ultrapanda 777 slots</strong>, or the latest arcade casino titles, <strong>Ultrapanda</strong> provides a seamless gaming experience. Access <strong>Ultrapanda mobi</strong> on your mobile device or play <strong>Ultrapanda online</strong> from your desktop. Join thousands of players who choose <strong>Ultrapanda</strong> for reliable gameplay, fast payouts, and 24/7 support.
           </p>
         </div>
       </div>
@@ -59,16 +59,16 @@ export function initApp() {
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Why Choose Ultrapanda for Your Gaming Experience?</h2>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-4 text-orange">Instant Access, No Agents Required</h3>
-            <p>Unlike traditional gaming platforms, Ultrapanda eliminates the need for agents. Register directly through our secure platform and start playing immediately. Our streamlined <strong>Ultrapanda login</strong> process gets you into the action in seconds.</p>
+            <h3 class="text-xl font-bold mb-4 text-orange">Ultrapanda Login & Instant Access</h3>
+            <p>Unlike traditional gaming platforms, <strong>Ultrapanda</strong> eliminates the need for agents. Complete your <strong>Ultrapanda login</strong> directly through our secure platform and start playing immediately. Our streamlined <strong>Ultrapanda mobi login</strong> process gets you into the action in seconds, whether you're playing <strong>Ultrapanda online</strong> or using the <strong>Ultra Panda Mobi</strong> app.</p>
           </div>
           <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-4 text-orange">Massive Game Library</h3>
-            <p>With over 75 premium games including <strong>fish arcade shooters</strong>, <strong>777 slot machines</strong>, and <strong>arcade casino classics</strong>, Ultrapanda offers unmatched variety. Discover new favorites weekly with our regularly updated game catalog.</p>
+            <h3 class="text-xl font-bold mb-4 text-orange">Download Ultrapanda or Play Online</h3>
+            <p>Choose how you want to play <strong>Ultrapanda</strong> - download the <strong>Ultra Panda Mobi</strong> app for mobile gaming or play <strong>Ultrapanda online</strong> instantly from your browser. With over 75 premium games including <strong>fish arcade shooters</strong>, <strong>777 slots</strong>, and <strong>arcade casino classics</strong>, <strong>Ultrapanda games</strong> offer unmatched variety.</p>
           </div>
           <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-4 text-orange">Secure & Trusted Platform</h3>
-            <p>Your security is our priority. Ultrapanda employs advanced encryption and secure payment processing to protect your data and transactions. Play with confidence knowing you're on the official <strong>Ultrapanda.xyz</strong> platform.</p>
+            <h3 class="text-xl font-bold mb-4 text-orange">Secure Ultrapanda Platform</h3>
+            <p>Your security is our priority. <strong>Ultrapanda</strong> employs advanced encryption and secure payment processing to protect your data and transactions. Play with confidence knowing you're on the official <strong>Ultrapanda.xyz</strong> platform. Your <strong>Ultrapanda login</strong> credentials are always protected.</p>
           </div>
         </div>
       </div>
@@ -186,8 +186,12 @@ export function initApp() {
             <p>Ultrapanda features a diverse collection including <strong>fish shooting games</strong> like Ocean King, classic and modern <strong>777 slot machines</strong>, <strong>arcade casino games</strong>, and themed adventure titles. Browse our complete <a href="/games" class="text-orange hover:underline">games library</a> to discover all available titles.</p>
           </div>
           <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">How do I download the Ultrapanda app?</h3>
-            <p>Visit our official <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">Facebook page</a> to download the <strong>Ultra Panda Mobi</strong> app. The app provides optimized mobile gaming with full access to all Ultrapanda features and games.</p>
+            <h3 class="text-xl font-bold mb-3 text-orange">How do I download Ultrapanda or access Ultrapanda mobi?</h3>
+            <p>To download <strong>Ultrapanda</strong>, visit our official <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">Facebook page</a> to get the <strong>Ultra Panda Mobi</strong> app download link. The <strong>Ultrapanda mobi</strong> app provides optimized mobile gaming with full access to all <strong>Ultrapanda</strong> features and games. You can also play <strong>Ultrapanda online</strong> directly from your browser without downloading.</p>
+          </div>
+          <div class="bg-gray-800 p-6 rounded-lg">
+            <h3 class="text-xl font-bold mb-3 text-orange">How do I complete my Ultrapanda login?</h3>
+            <p>To access your account, use your <strong>Ultrapanda login</strong> credentials on our secure platform. If you need help with <strong>Ultrapanda mobi login</strong> or have forgotten your <strong>Ultrapanda login password</strong>, contact our support team. We'll help you regain access to your <strong>Ultrapanda</strong> account quickly.</p>
           </div>
           <div class="bg-gray-800 p-6 rounded-lg">
             <h3 class="text-xl font-bold mb-3 text-orange">What bonuses does Ultrapanda offer?</h3>

@@ -4,25 +4,25 @@ import { Blog, initBlog } from './pages/Blog.js';
 import { ContactUs, initContactUs } from './pages/ContactUs.js';
 
 const routes = {
-  '/': () => {
-    initApp();
+  '/': (path) => {
+    initApp(path);
   },
-  '/games': () => {
-    document.getElementById('app').innerHTML = Games();
+  '/games': (path) => {
+    document.getElementById('app').innerHTML = Games(path);
     setTimeout(() => {
       initGames();
       initMobileMenu();
     }, 0);
   },
-  '/blog': () => {
-    document.getElementById('app').innerHTML = Blog();
+  '/blog': (path) => {
+    document.getElementById('app').innerHTML = Blog(path);
     setTimeout(() => {
       initBlog();
       initMobileMenu();
     }, 0);
   },
-  '/contact-us': () => {
-    document.getElementById('app').innerHTML = ContactUs();
+  '/contact-us': (path) => {
+    document.getElementById('app').innerHTML = ContactUs(path);
     setTimeout(() => {
       initContactUs();
       initMobileMenu();
@@ -58,24 +58,24 @@ function initMobileMenu() {
 function updateSEO(path) {
   const seoData = {
     '/': {
-      title: 'Ultrapanda Club 777 - Official Login & Download | Premium Fish Arcade Games & Slots',
-      description: 'Official Ultrapanda Club 777 platform - Play premium fish arcade games, 777 slots, and arcade casino titles. Instant access, 100% sign-up bonus, no agent required. Download Ultra Panda Mobi app or play online today!',
-      keywords: 'Ultrapanda, Ultrapanda Club 777, Ultra Panda login, Ultra Panda Mobi, fish arcade games, 777 slots, Ocean King, Ultrapanda.xyz, online casino games'
+      title: 'Ultrapanda - Official Login & Download | Ultra Panda Mobi | 777 Games Online',
+      description: 'Ultrapanda - Play premium fish arcade games and 777 slots online. Download Ultra Panda Mobi app or play instantly. Ultrapanda login, 100% bonus, no agent required. Official Ultrapanda.xyz platform.',
+      keywords: 'ultrapanda, ultrapanda mobi, ultrapanda login, ultrapanda download, ultrapanda.mobi, ultrapanda online, ultrapanda 777, Ultra Panda Mobi, Ultrapanda Club 777, fish arcade games, 777 slots'
     },
     '/games': {
-      title: 'Ultrapanda Games - 75+ Fish Arcade Games, 777 Slots & Arcade Casino Titles',
-      description: 'Explore 75+ premium Ultrapanda games including Ocean King fish shooting, Golden Legend Plus slots, and arcade casino classics. Play instantly on desktop or mobile. No downloads required. Start winning today!',
-      keywords: 'Ultrapanda games, fish shooting games, Ocean King, 777 slots, Ultra Panda slots, arcade casino games, Ultrapanda game collection, online fish games'
+      title: 'Ultrapanda Games - Play Fish Arcade, 777 Slots & Casino Games Online',
+      description: 'Play Ultrapanda games online - 75+ fish arcade games, 777 slots, and arcade casino titles. Ocean King, Golden Legend Plus, and more. Play instantly on Ultrapanda mobi or desktop. No download required.',
+      keywords: 'ultrapanda games, ultrapanda game, ultrapanda casino, ultrapanda slots, fish arcade games, 777 slots, Ocean King, Ultrapanda online games, play ultrapanda'
     },
     '/blog': {
-      title: 'Ultrapanda Blog - Gaming Tips, Strategies & Platform Updates | Expert Guides',
-      description: 'Ultrapanda blog featuring expert gaming tips, winning strategies for fish arcade games and 777 slots, platform updates, and comprehensive guides. Learn how to master Ultrapanda Club 777 games and maximize your wins.',
-      keywords: 'Ultrapanda blog, Ultra Panda tips, fish game strategies, 777 slot guides, Ultrapanda login guide, gaming tips, Ultrapanda news, game strategies'
+      title: 'Ultrapanda Blog - Login Guide, Download Tips & Gaming Strategies',
+      description: 'Ultrapanda blog with login guides, download instructions for Ultra Panda Mobi app, gaming strategies, and platform updates. Learn Ultrapanda login, download tips, and winning strategies.',
+      keywords: 'ultrapanda blog, ultrapanda login guide, ultrapanda download, ultrapanda mobi login, ultrapanda tips, Ultrapanda strategies, Ultra Panda Mobi guide'
     },
     '/contact-us': {
-      title: 'Contact Ultrapanda Support - 24/7 Help for Login, Games & Account Issues',
-      description: 'Get help with Ultrapanda login, account issues, game questions, and technical support. Contact our 24/7 support team via email, Facebook, or contact form. Official Ultrapanda.xyz customer service.',
-      keywords: 'Contact Ultrapanda, Ultrapanda support, Ultra Panda help, Ultrapanda login help, customer service, Ultrapanda contact, technical support'
+      title: 'Ultrapanda Login Help & Support - Contact Us for Account & Download Issues',
+      description: 'Need Ultrapanda login help or download support? Contact Ultrapanda support team 24/7. Get help with Ultrapanda mobi login, account access, app download, and technical issues. Official support.',
+      keywords: 'ultrapanda login, ultrapanda support, ultrapanda mobi login, ultrapanda contact, ultrapanda help, ultrapanda login password, ultrapanda customer service'
     }
   };
 
@@ -289,10 +289,10 @@ export function initRouter() {
   updateSEO(path);
 
   if (routes[path]) {
-    routes[path]();
+    routes[path](path);
   } else {
     // Fallback to home page instead of non-existent route
-    routes['/']();
+    routes['/']('/');
   }
 
   // Handle navigation clicks
@@ -313,9 +313,9 @@ export function initRouter() {
       updateSEO(path);
 
       if (routes[path]) {
-        routes[path]();
+        routes[path](path);
       } else {
-        routes['/']();
+        routes['/']('/');
       }
     }
   });
@@ -325,9 +325,9 @@ export function initRouter() {
     const path = normalizePath(window.location.pathname);
     updateSEO(path);
     if (routes[path]) {
-      routes[path]();
+      routes[path](path);
     } else {
-      routes['/']();
+      routes['/']('/');
     }
   });
 }

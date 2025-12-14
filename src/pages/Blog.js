@@ -53,15 +53,15 @@ const blogTopics = [
   }
 ];
 
-export function Blog() {
+export function Blog(currentPath = '/blog') {
   return `
-    ${Header()}
+    ${Header(currentPath)}
     
     <section class="blog-hero relative py-20">
       <div class="g-container text-center">
-        <h1 class="text-4xl md:text-5xl font-bold mb-6">Ultrapanda Blog: Gaming Tips, Strategies & Updates</h1>
+        <h1 class="text-4xl md:text-5xl font-bold mb-6">Ultrapanda Blog - Login Guide, Download Tips & Strategies</h1>
         <p class="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">
-          Welcome to the <strong>Ultrapanda blog</strong> – your ultimate resource for <strong>Ultra Panda gaming tips</strong>, <strong>winning strategies</strong>, platform updates, and expert insights. Whether you're new to <strong>Ultrapanda Club 777</strong> or a seasoned player, our blog helps you maximize your gaming experience and stay informed about the latest features, promotions, and game releases.
+          Welcome to the <strong>Ultrapanda blog</strong> – your ultimate resource for <strong>Ultrapanda login</strong> guides, <strong>Ultrapanda download</strong> instructions, <strong>Ultra Panda Mobi</strong> tips, gaming strategies, and platform updates. Whether you're new to <strong>Ultrapanda</strong> or need help with <strong>Ultrapanda mobi login</strong>, our blog helps you maximize your gaming experience and stay informed about the latest features, promotions, and game releases.
         </p>
       </div>
     </section>
@@ -75,11 +75,13 @@ export function Blog() {
             The <strong>Ultrapanda blog</strong> is designed to enhance your gaming journey with valuable content covering everything from <strong>Ultrapanda login tutorials</strong> to advanced <strong>fish game strategies</strong>. Our expert team regularly publishes guides, tips, and updates to help you:
           </p>
           <ul class="list-disc list-inside space-y-3 ml-4">
+            <li>Complete your <strong>Ultrapanda login</strong> and master <strong>Ultrapanda mobi login</strong> process</li>
+            <li>Download <strong>Ultrapanda</strong> and learn how to use the <strong>Ultra Panda Mobi</strong> app</li>
             <li>Master popular <strong>Ultrapanda games</strong> like Ocean King, Golden Legend Plus, and more</li>
-            <li>Understand <strong>Ultra Panda 777 slots</strong> mechanics and bonus features</li>
+            <li>Understand <strong>Ultrapanda 777 slots</strong> mechanics and bonus features</li>
             <li>Learn effective strategies for <strong>fish arcade games</strong> and <strong>arcade casino titles</strong></li>
             <li>Stay updated on new game releases, promotions, and platform improvements</li>
-            <li>Navigate account management, security best practices, and technical support</li>
+            <li>Navigate account management, <strong>Ultrapanda login password</strong> recovery, and technical support</li>
           </ul>
           <p>
             Explore our <a href="/games" class="text-orange hover:underline font-semibold">games collection</a> to try out the strategies you learn, or <a href="/contact-us" class="text-orange hover:underline font-semibold">contact our support team</a> if you have questions about any blog topics.

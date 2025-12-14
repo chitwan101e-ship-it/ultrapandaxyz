@@ -1,6 +1,14 @@
 import config from '../data/config.json';
 
-export function Header() {
+export function Header(currentPath = '/') {
+  // Normalize path to match navigation paths
+  const normalizePath = (path) => {
+    if (path === '/' || path === '') return '/';
+    return path.replace(/\/+$/, '');
+  };
+
+  const normalizedCurrentPath = normalizePath(currentPath);
+
   return `
     <header class="main-header">
       <div class="main-header-container g-container g-flex">
@@ -20,9 +28,11 @@ export function Header() {
           </div>
           <div class="main-menu">
             <ul class="g-flex">
-              ${config.navigation.map(item => `
-                <li><a href="${item.path}" class="nav-link">${item.label}</a></li>
-              `).join('')}
+              ${config.navigation.map(item => {
+                const normalizedItemPath = normalizePath(item.path);
+                const isActive = normalizedCurrentPath === normalizedItemPath;
+                return `<li><a href="${item.path}" class="nav-link ${isActive ? 'active' : ''}">${item.label}</a></li>`;
+              }).join('')}
             </ul>
           </div>
           <div class="second-menu">

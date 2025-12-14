@@ -46,7 +46,7 @@
     @apply flex;
   }
 
-  .main-menu ul li:nth-child(1) a::after {
+  .main-menu ul li a.active::after {
     @apply absolute w-full h-0.5 bg-gradient-to-r from-[#F45127] to-[#F7B33D] left-0 bottom-[-5px] content-[''];
   }
 
@@ -116,6 +116,19 @@
 
   .main-menu ul li a {
     @apply relative text-white hover:text-orange transition-colors text-sm;
+  }
+
+  .main-menu ul li a.active {
+    @apply text-orange;
+  }
+
+  .main-menu ul li a.active::after {
+    @apply absolute w-full h-0.5 bg-gradient-to-r from-[#F45127] to-[#F7B33D] left-0 bottom-[-5px] content-[''];
+  }
+
+  /* Remove active state from all links first, then apply to correct one */
+  .main-menu ul li a:not(.active)::after {
+    display: none;
   }
 
   .second-menu ul {

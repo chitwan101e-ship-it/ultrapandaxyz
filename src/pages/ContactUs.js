@@ -16,16 +16,16 @@ const faqs = [
     answer: `To create an account and reload, reach out to us through our <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">official Facebook page</a>. Our dedicated support team will guide you through the registration process and help you make your first deposit. The process is straightforward, secure, and typically completed within minutes.`
   },
   {
-    question: "Where can I download the Ultrapanda app?",
-    answer: `To download the <strong>Ultra Panda Mobi</strong> app, visit our <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">official Facebook page</a>. The app provides optimized mobile gaming with full access to all Ultrapanda features and games. If you encounter any download issues, our support team is available to assist you.`
+    question: "Where can I download Ultrapanda or get Ultrapanda mobi?",
+    answer: `To download <strong>Ultrapanda</strong> or get the <strong>Ultra Panda Mobi</strong> app, visit our <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">official Facebook page</a> for the <strong>Ultrapanda download</strong> link. The <strong>Ultrapanda mobi</strong> app provides optimized mobile gaming with full access to all <strong>Ultrapanda</strong> features and games. You can also play <strong>Ultrapanda online</strong> without downloading. If you encounter any <strong>Ultrapanda download</strong> issues, our support team is available to assist you.`
   },
   {
     question: "Can I play Ultrapanda games without downloading the app?",
     answer: "Currently, we primarily offer our gaming experience through our app for the best performance and security. However, we are actively working on expanding our accessibility options to provide web-based alternatives. For the most up-to-date information on platform access methods, please contact our support team or check our <a href=\"/blog\" class=\"text-orange hover:underline\">blog</a> for announcements."
   },
   {
-    question: "I'm having trouble with my Ultrapanda login. What should I do?",
-    answer: "If you're experiencing <strong>Ultrapanda login</strong> issues, first ensure you're using the correct credentials. If problems persist, contact our support team via email at support@ultrapanda.xyz or through our <a href=\"" + config.links.facebook + "\" target=\"_blank\" class=\"text-orange hover:underline\">Facebook page</a>. We'll help you regain access to your account quickly and securely."
+    question: "I'm having trouble with my Ultrapanda login or Ultrapanda mobi login. What should I do?",
+    answer: "If you're experiencing <strong>Ultrapanda login</strong> or <strong>Ultrapanda mobi login</strong> issues, first ensure you're using the correct <strong>Ultrapanda login password</strong>. If you've forgotten your <strong>Ultrapanda login</strong> credentials, contact our support team via email at support@ultrapanda.xyz or through our <a href=\"" + config.links.facebook + "\" target=\"_blank\" class=\"text-orange hover:underline\">Facebook page</a>. We'll help you regain access to your <strong>Ultrapanda</strong> account quickly and securely."
   },
   {
     question: "I have concerns about my account or cashout. Can you help?",
@@ -53,16 +53,16 @@ const faqs = [
   }
 ];
 
-export function ContactUs() {
+export function ContactUs(currentPath = '/contact-us') {
   return `
-    ${Header()}
+    ${Header(currentPath)}
     
     <section class="contact-hero relative">
       <div class="contact-hero-container">
         <img src="/media/contact-hero.jpg" alt="Contact Ultrapanda Support Team" class="w-full">
         <div class="contact-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-10 max-w-4xl px-4">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4">Contact Ultrapanda Support</h1>
-          <p class="text-lg">Have a question about <strong>Ultrapanda login</strong>, need help with <strong>Ultra Panda games</strong>, or want to provide feedback? Our dedicated support team is available 24/7 to assist you. Whether you need help with account access, game strategies, technical issues, or general inquiries about <strong>Ultrapanda Club 777</strong>, we're here to help.</p>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4">Ultrapanda Login Help & Support - Contact Us</h1>
+          <p class="text-lg">Need help with <strong>Ultrapanda login</strong>, <strong>Ultrapanda mobi login</strong>, or <strong>Ultrapanda download</strong>? Our dedicated support team is available 24/7 to assist you. Whether you need help with <strong>Ultrapanda login password</strong>, account access, <strong>Ultra Panda Mobi</strong> app download, game strategies, or technical issues, we're here to help with all your <strong>Ultrapanda</strong> needs.</p>
         </div>
       </div>
     </section>
@@ -70,13 +70,13 @@ export function ContactUs() {
     <!-- Trust & Support Intro -->
     <section class="contact-intro py-12">
       <div class="g-container max-w-4xl mx-auto px-4">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Your Trusted Ultrapanda Support Team</h2>
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Ultrapanda Support - Login, Download & Account Help</h2>
         <div class="space-y-6 text-lg leading-relaxed">
           <p>
-            At <strong>Ultrapanda</strong>, customer satisfaction is our top priority. Our experienced support team understands the importance of quick, helpful responses and is committed to resolving your concerns efficiently. Whether you're experiencing issues with <strong>Ultrapanda login</strong>, need guidance on downloading the <strong>Ultra Panda Mobi</strong> app, or have questions about our <strong>fish arcade games</strong> and <strong>777 slots</strong>, we provide comprehensive assistance.
+            At <strong>Ultrapanda</strong>, customer satisfaction is our top priority. Our experienced support team understands the importance of quick, helpful responses and is committed to resolving your concerns efficiently. Whether you're experiencing issues with <strong>Ultrapanda login</strong>, <strong>Ultrapanda mobi login</strong>, need guidance on <strong>Ultrapanda download</strong> or the <strong>Ultra Panda Mobi</strong> app, or have questions about playing <strong>Ultrapanda online</strong>, we provide comprehensive assistance.
           </p>
           <p>
-            We're proud to be the official <strong>Ultrapanda.xyz</strong> platform, offering transparent, secure, and reliable gaming services. Our support team can help with account management, bonus inquiries, game recommendations, technical troubleshooting, and more. For detailed guides and tips, visit our <a href="/blog" class="text-orange hover:underline font-semibold">Ultrapanda blog</a> or explore our <a href="/games" class="text-orange hover:underline font-semibold">games collection</a>.
+            We're proud to be the official <strong>Ultrapanda.xyz</strong> platform, offering transparent, secure, and reliable gaming services. Our support team can help with <strong>Ultrapanda login password</strong> recovery, account management, <strong>Ultrapanda download</strong> instructions, bonus inquiries, game recommendations, and technical troubleshooting. For detailed guides on <strong>Ultrapanda login</strong> and <strong>Ultrapanda mobi</strong>, visit our <a href="/blog" class="text-orange hover:underline font-semibold">Ultrapanda blog</a> or explore our <a href="/games" class="text-orange hover:underline font-semibold">games collection</a>.
           </p>
         </div>
       </div>
