@@ -152,11 +152,19 @@
   }
 
   .mobile-nav {
-    @apply hidden md:hidden cursor-pointer;
+    @apply flex flex-col md:hidden cursor-pointer z-50;
+    width: 30px;
+    height: 24px;
+    justify-content: space-between;
   }
 
   .mobile-nav span {
-    @apply block w-6 h-0.5 bg-white mb-1;
+    @apply block w-full h-0.5 bg-white transition-all duration-300;
+    display: block;
+  }
+
+  .mobile-nav:hover span {
+    @apply bg-orange;
   }
 
   .menu {
@@ -571,7 +579,18 @@
   }
 
   .messager img {
-    @apply w-12 h-12 hover:scale-110 transition-transform;
+    @apply w-16 h-16 md:w-12 md:h-12 hover:scale-110 transition-transform;
+  }
+
+  @media (max-width: 768px) {
+    .messager {
+      bottom: 1rem;
+      right: 1rem;
+    }
+    .messager img {
+      width: 64px;
+      height: 64px;
+    }
   }
 
   /* Games Hero Banner Styles */
