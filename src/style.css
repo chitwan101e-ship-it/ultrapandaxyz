@@ -192,9 +192,14 @@
     @apply relative inline-block;
   }
 
-  .footer-logo-badge {
-    @apply relative z-10;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  .footer-logo-container {
+    @apply relative z-10 inline-block;
+  }
+
+  .footer-logo-img {
+    @apply max-w-xs mx-auto;
+    height: auto;
+    max-height: 120px;
   }
 
   .footer-copyright-top {

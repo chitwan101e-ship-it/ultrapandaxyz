@@ -9,10 +9,8 @@ export function Footer() {
         <!-- Logo Section -->
         <div class="footer-logo-section text-center mb-8">
           <div class="footer-logo-wrapper inline-block relative">
-            <div class="footer-logo-badge bg-white border-4 border-yellow-400 px-8 py-4 rounded-lg shadow-lg">
-              <div class="text-red-600 text-xs font-bold mb-1">WELCOME TO FABULOUS</div>
-              <div class="text-red-600 text-3xl font-bold mb-1">ULTRAPANDA</div>
-              <div class="text-red-600 text-sm font-bold">ONLINE</div>
+            <div class="footer-logo-container">
+              <img src="/media/logo.png" alt="Ultrapanda Logo" class="footer-logo-img">
             </div>
             <div class="footer-copyright-top absolute right-0 top-1/2 transform -translate-y-1/2 translate-x-full ml-4 whitespace-nowrap text-white text-sm">
               © ${currentYear} All rights reserved.
