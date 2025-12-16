@@ -8,12 +8,12 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
     <section class="guide-hero relative">
       <div class="guide-hero-banner relative">
         <img src="/media/UP%20images/ultrapanda%20club%20lobby.png" alt="Ultra Panda Club Lobby" class="w-full h-auto">
-        <div class="guide-hero-overlay absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="guide-hero-overlay absolute inset-0"></div>
       </div>
       <div class="guide-hero-content absolute inset-0 flex items-center justify-center z-10">
         <div class="g-container max-w-4xl mx-auto px-4 text-center">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Ultra Panda Complete Guide (2025): Games, Bonuses, App & How It Works</h1>
-          <p class="text-gray-200 mb-4">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.7);">Ultra Panda Complete Guide (2025): Games, Bonuses, App & How It Works</h1>
+          <p class="text-gray-200 mb-4" style="text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);">
             <strong>Official Website:</strong> <a href="https://ultrapanda.club" target="_blank" class="text-orange hover:underline">https://ultrapanda.club</a>
           </p>
         </div>
