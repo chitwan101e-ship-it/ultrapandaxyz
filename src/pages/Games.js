@@ -14,8 +14,8 @@ export function Games(currentPath = '/games') {
         <div class="games-hero-overlay absolute inset-0 bg-black bg-opacity-50 z-10"></div>
         <div class="games-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-20 max-w-4xl px-4">
           <div>
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">Ultrapanda Games - Play Online Fish Arcade & 777 Slots</h1>
-            <p class="text-lg">Discover over 75 premium <strong>Ultrapanda games</strong> including <strong>fish shooting games</strong>, <strong>Ultrapanda 777 slots</strong>, and <strong>arcade casino titles</strong>. Play <strong>Ultrapanda online</strong> instantly or download <strong>Ultra Panda Mobi</strong> app. Play anytime, improve your skills, and win big with our diverse <strong>Ultrapanda</strong> gaming library.</p>
+            <h1 class="text-2xl md:text-3xl font-bold mb-4">Ultrapanda Games - Play Online Fish Arcade & 777 Slots</h1>
+            <p class="text-base">Discover over 75 premium <strong>Ultrapanda games</strong> including <strong>fish shooting games</strong>, <strong>Ultrapanda 777 slots</strong>, and <strong>arcade casino titles</strong>. Play <strong>Ultrapanda online</strong> instantly or download <strong>Ultra Panda Mobi</strong> app.</p>
           </div>
         </div>
       </div>
@@ -24,12 +24,12 @@ export function Games(currentPath = '/games') {
     <!-- Games Intro Section -->
     <section class="games-intro py-12">
       <div class="g-container max-w-4xl mx-auto text-center px-4">
-        <h2 class="text-3xl md:text-4xl font-bold mb-6">Play Ultrapanda Games Online - Fish Arcade & 777 Slots</h2>
-        <p class="text-lg leading-relaxed mb-4">
-          At <strong>Ultrapanda</strong>, we curate the finest collection of <strong>online casino games</strong>, <strong>fish arcade shooters</strong>, and <strong>777 slot machines</strong> to deliver unmatched entertainment. Play <strong>Ultrapanda online</strong> instantly or download the <strong>Ultra Panda Mobi</strong> app. Whether you're a fan of action-packed <strong>Ocean King fish games</strong>, classic <strong>Ultrapanda 777 slots</strong>, or strategic <strong>arcade casino games</strong>, our <strong>Ultrapanda games</strong> library offers something for every player.
+        <h2 class="text-2xl md:text-3xl font-bold mb-6">Play Ultrapanda Games Online - Fish Arcade & 777 Slots</h2>
+        <p class="text-base leading-relaxed mb-4">
+          At <strong>Ultrapanda</strong>, we curate the finest collection of <strong>online casino games</strong>, <strong>fish arcade shooters</strong>, and <strong>777 slot machines</strong> to deliver unmatched entertainment. Play <strong>Ultrapanda online</strong> instantly or download the <strong>Ultra Panda Mobi</strong> app.
         </p>
-        <p class="text-lg leading-relaxed">
-          All <strong>Ultrapanda games</strong> are optimized for both desktop and mobile play. Access <strong>Ultrapanda</strong> through your <strong>Ultrapanda login</strong> to play <strong>Ultrapanda online</strong> or use the <strong>Ultrapanda mobi</strong> app. With instant access, secure transactions, and regular game updates, <strong>Ultrapanda</strong> remains the premier destination for online gaming. <a href="/" class="text-orange hover:underline font-semibold">Return to homepage</a> to learn more about <strong>Ultrapanda</strong> platform features. For gaming strategies and tips, check out our <a href="/blog" class="text-orange hover:underline font-semibold">Ultrapanda blog</a>.
+        <p class="text-base leading-relaxed">
+          All <strong>Ultrapanda games</strong> are optimized for both desktop and mobile play. Access <strong>Ultrapanda</strong> through your <strong>Ultrapanda login</strong> to play <strong>Ultrapanda online</strong> or use the <strong>Ultrapanda mobi</strong> app. <a href="/" class="text-orange hover:underline font-semibold">Return to homepage</a> to learn more about <strong>Ultrapanda</strong> platform features. For gaming strategies and tips, check out our <a href="/blog" class="text-orange hover:underline font-semibold">Ultrapanda blog</a>.
         </p>
       </div>
     </section>
