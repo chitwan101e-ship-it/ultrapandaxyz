@@ -152,85 +152,6 @@ export function initApp(currentPath = '/') {
       </div>
     </section>
     
-    <!-- Home FAQ Section -->
-    <section class="home-faq py-12 bg-gray-900">
-      <div class="g-container max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions About Ultrapanda</h2>
-        
-        <!-- FAQ - Clean List Format -->
-        <div class="faq-list-wrapper max-w-4xl mx-auto">
-          <ul class="faq-list">
-            <li class="faq-list-item">
-              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="0">
-                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">1.</span>Is Ultrapanda.xyz the official site?</span>
-                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
-              </div>
-              <div class="faq-answer-dropdown" data-index="0">
-                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
-                  Yes – Ultrapanda.xyz is the newest, official version of the Ultrapanda gaming platform. We provide secure access to all <strong>Ultrapanda Club 777</strong> games, features, and services without requiring agents or third-party intermediaries.
-                </div>
-              </div>
-            </li>
-            <li class="faq-list-item">
-              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="1">
-                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">2.</span>Do I need an agent to play on Ultrapanda?</span>
-                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
-              </div>
-              <div class="faq-answer-dropdown" data-index="1">
-                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
-                  No agents are required. You can register and play instantly through our secure platform. Simply create your account, make a deposit, and start enjoying our extensive library of <strong>fish arcade games</strong> and <strong>slot machines</strong> immediately.
-                </div>
-              </div>
-            </li>
-            <li class="faq-list-item">
-              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="2">
-                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">3.</span>What types of games does Ultrapanda offer?</span>
-                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
-              </div>
-              <div class="faq-answer-dropdown" data-index="2">
-                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
-                  Ultrapanda features a diverse collection including <strong>fish shooting games</strong> like Ocean King, classic and modern <strong>777 slot machines</strong>, <strong>arcade casino games</strong>, and themed adventure titles. Browse our complete <a href="/games" class="text-orange hover:underline">games library</a> to discover all available titles.
-                </div>
-              </div>
-            </li>
-            <li class="faq-list-item">
-              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="3">
-                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">4.</span>How do I download Ultrapanda or access Ultrapanda mobi?</span>
-                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
-              </div>
-              <div class="faq-answer-dropdown" data-index="3">
-                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
-                  To download <strong>Ultrapanda</strong>, visit our official <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">Facebook page</a> to get the <strong>Ultra Panda Mobi</strong> app download link. The <strong>Ultrapanda mobi</strong> app provides optimized mobile gaming with full access to all <strong>Ultrapanda</strong> features and games. You can also play <strong>Ultrapanda online</strong> directly from your browser without downloading.
-                </div>
-              </div>
-            </li>
-            <li class="faq-list-item">
-              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="4">
-                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">5.</span>How do I complete my Ultrapanda login?</span>
-                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
-              </div>
-              <div class="faq-answer-dropdown" data-index="4">
-                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
-                  To access your account, use your <strong>Ultrapanda login</strong> credentials on our secure platform. If you need help with <strong>Ultrapanda mobi login</strong> or have forgotten your <strong>Ultrapanda login password</strong>, contact our support team. We'll help you regain access to your <strong>Ultrapanda</strong> account quickly.
-                </div>
-              </div>
-            </li>
-            <li class="faq-list-item">
-              <div class="faq-question-row cursor-pointer flex justify-between items-center py-4 border-b border-gray-700" data-index="5">
-                <span class="faq-question-text text-white text-lg"><span class="faq-number mr-3 text-orange font-bold">6.</span>What bonuses does Ultrapanda offer?</span>
-                <i class="bi bi-plus-lg text-white text-xl transition-transform duration-300"></i>
-              </div>
-              <div class="faq-answer-dropdown" data-index="5">
-                <div class="faq-answer-content py-4 text-gray-300 leading-relaxed">
-                  New players receive a <strong>100% sign-up bonus</strong> on their first deposit. We also offer weekly promotions, reload bonuses, and special event rewards. Check our <a href="/blog" class="text-orange hover:underline">blog</a> for the latest bonus announcements and promotional offers.
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
     <section class="exp-main py-12">
       <div class="exp-container g-container text-center">
         <h2 class="text-3xl font-bold mb-4">Have An Unforgettable <br>Gaming Experience</h2>
@@ -255,7 +176,6 @@ export function initApp(currentPath = '/') {
   // Initialize JavaScript functionality
   initMobileMenu();
   initGameLinks();
-  initHomeFAQ();
 }
 
 function initHomeFAQ() {

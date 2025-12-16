@@ -162,31 +162,6 @@ export function Blog(currentPath = '/blog') {
       </div>
     </section>
     
-    <!-- Blog FAQ -->
-    <section class="blog-faq py-12 bg-gray-900">
-      <div class="g-container max-w-4xl mx-auto">
-        <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Frequently Asked Questions About the Ultrapanda Blog</h2>
-        <div class="space-y-6">
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">How often is the Ultrapanda blog updated?</h3>
-            <p>We regularly publish new content covering game strategies, platform updates, and gaming tips. Check back frequently or follow our official channels to stay informed about new blog posts and <strong>Ultrapanda news</strong>.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">Can I request specific blog topics?</h3>
-            <p>Absolutely! We value our community's input. If you have questions about <strong>Ultrapanda games</strong>, strategies, or platform features, <a href="/contact-us" class="text-orange hover:underline">contact our support team</a> with your topic suggestions. We'll consider them for future blog posts.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">Are the blog strategies applicable to all Ultrapanda games?</h3>
-            <p>While some strategies apply broadly, many tips are game-specific. Our blog clearly labels which strategies work for <strong>fish arcade games</strong>, <strong>777 slots</strong>, or <strong>arcade casino titles</strong>. Always check the game category when applying strategies.</p>
-          </div>
-          <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-xl font-bold mb-3 text-orange">Where can I find information about new Ultrapanda games?</h3>
-            <p>New game announcements are featured in our blog's "Platform Updates & News" section. You can also browse our complete <a href="/games" class="text-orange hover:underline">games library</a> to discover the latest additions to the Ultrapanda collection.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    
     <section class="blog-cta py-12">
       <div class="g-container text-center">
         <h2 class="text-3xl font-bold mb-4">Ready to Apply What You've Learned?</h2>
