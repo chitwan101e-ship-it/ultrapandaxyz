@@ -43,7 +43,7 @@ export function initApp(currentPath = '/') {
             Discover Ultra Panda. the all in one gaming platform
           </h1>
           <h2 class="hero-sub-heading text-lg md:text-xl lg:text-2xl font-normal mb-6 md:mb-8 leading-relaxed opacity-90">
-            Ultra Panda Complete Guide- Game Bonuses & App(2025)
+            <a href="/ultrapandacompleteguide" class="hover:text-orange transition-colors cursor-pointer underline">Ultra Panda Complete Guide- Game Bonuses & App(2025)</a>
           </h2>
           <div class="hero-buttons flex flex-wrap gap-4 mt-8">
             <a href="${config.links.signUp}" target="_blank" class="hero-play-now-btn inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 text-white font-bold rounded-lg text-base md:text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">

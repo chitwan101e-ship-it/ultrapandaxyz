@@ -140,6 +140,15 @@
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.8);
   }
 
+  .hero-sub-heading a {
+    text-decoration: underline;
+    transition: color 0.3s ease;
+  }
+
+  .hero-sub-heading a:hover {
+    color: #F45127;
+  }
+
   .hero-buttons {
     margin-top: 2rem;
   }

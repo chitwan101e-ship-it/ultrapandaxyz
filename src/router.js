@@ -2,6 +2,7 @@ import { initApp } from './app.js';
 import { Games, initGames } from './pages/Games.js';
 import { Blog, initBlog } from './pages/Blog.js';
 import { ContactUs, initContactUs } from './pages/ContactUs.js';
+import { UltraPandaGuide, initUltraPandaGuide } from './pages/UltraPandaGuide.js';
 
 const routes = {
   '/': (path) => {
@@ -25,6 +26,13 @@ const routes = {
     document.getElementById('app').innerHTML = ContactUs(path);
     setTimeout(() => {
       initContactUs();
+      initMobileMenu();
+    }, 0);
+  },
+  '/ultrapandacompleteguide': (path) => {
+    document.getElementById('app').innerHTML = UltraPandaGuide(path);
+    setTimeout(() => {
+      initUltraPandaGuide();
       initMobileMenu();
     }, 0);
   }
@@ -76,6 +84,11 @@ function updateSEO(path) {
       title: 'Ultrapanda Login Help & Support - Contact Us for Account & Download Issues',
       description: 'Need Ultrapanda login help or download support? Contact Ultrapanda support team 24/7. Get help with Ultrapanda mobi login, account access, app download, and technical issues. Official support.',
       keywords: 'ultrapanda login, ultrapanda support, ultrapanda mobi login, ultrapanda contact, ultrapanda help, ultrapanda login password, ultrapanda customer service'
+    },
+    '/ultrapandacompleteguide': {
+      title: 'Ultra Panda Complete Guide (2025) – Games, Bonuses & App',
+      description: 'Discover Ultra Panda. Learn about Ultra Panda games, bonuses, jackpots, and app-exclusive rewards. Complete guide for ultrapanda.club.',
+      keywords: 'Ultra Panda, ultra panda club, ultra panda game, ultra panda 777, ultra panda login, ultra panda app, Ultra Panda app, Ultra Panda bonus, Ultra Panda games, Ultra Panda slots, Ultra Panda fishing games, Ultra Panda jackpot'
     }
   };
 
