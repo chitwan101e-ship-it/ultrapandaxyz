@@ -1077,6 +1077,25 @@
   }
 }
 
+/* Background images for all sections */
+.game-categories,
+.support-options,
+.blog-topics {
+  background: rgba(0, 0, 0, 0.8) url('/media/games-services-bg.jpg') !important;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+@media (max-width: 768px) {
+  .main-footer,
+  .game-categories,
+  .support-options,
+  .blog-topics {
+    background-attachment: scroll !important;
+  }
+}
+
 @keyframes bonusFloat {
 
   0%,
