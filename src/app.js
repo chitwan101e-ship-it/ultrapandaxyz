@@ -18,8 +18,8 @@ export function initApp(currentPath = '/') {
           <!-- Fallback image if video doesn't load -->
           <img src="${config.hero.desktopBanner}" alt="Hero Banner" class="w-full">
         </video>
-        <!-- Dark overlay for text prominence - stronger overlay for video -->
-        <div class="hero-dark-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
+        <!-- Gradient overlay for text prominence - darker on left (text side), lighter on right -->
+        <div class="hero-dark-overlay absolute inset-0 z-10"></div>
       </div>
       
       <div class="casino-shimmer"></div>
@@ -39,11 +39,14 @@ export function initApp(currentPath = '/') {
       <!-- Hero Content -->
       <div class="hero-content-overlay absolute inset-0 flex items-center z-20 px-6 md:px-12 lg:px-16 xl:px-20 py-8 md:py-12">
         <div class="hero-text-content max-w-4xl text-white w-full">
-          <h1 class="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 md:mb-8 leading-tight uppercase">
-            Complete Guide to Ultrapanda - Play<br class="hidden md:block">Online Games | Download<br class="hidden md:block">Ultra Panda Mobi App
+          <h1 class="hero-main-heading text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 md:mb-6 leading-tight uppercase">
+            Complete Guide to Ultrapanda Club
           </h1>
+          <h2 class="hero-sub-heading text-lg md:text-xl lg:text-2xl font-normal mb-6 md:mb-8 leading-relaxed opacity-90">
+            Experience unmatched quality in gameplay and customer service. Play Ultrapanda - the premier gaming platform with over 75 premium fish arcade games, 777 slots, and arcade casino titles.
+          </h2>
           <div class="hero-buttons flex flex-wrap gap-4 mt-8">
-            <a href="${config.links.signUp}" target="_blank" class="hero-play-now-btn inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-[#F45127] to-[#F7B33D] text-white font-bold rounded-lg text-base md:text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+            <a href="${config.links.signUp}" target="_blank" class="hero-play-now-btn inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 text-white font-bold rounded-lg text-base md:text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
               <i class="bi bi-star-fill text-xl"></i>
               <span>Play Now</span>
             </a>
