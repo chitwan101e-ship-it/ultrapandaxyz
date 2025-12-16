@@ -13,6 +13,7 @@ export function initApp(currentPath = '/') {
     <section class="home-hero relative">
       <div class="hero-banner-wrapper relative">
         <video autoplay muted loop playsinline class="hero-video w-full h-full object-cover" preload="auto" poster="${config.hero.desktopBanner}">
+          <source src="/media/ULTRAPANDA%20CLUB%20BANNER%20VIDEO.mp4" type="video/mp4">
           <source src="/media/ULTRAPANDA CLUB BANNER VIDEO.mp4" type="video/mp4">
           <!-- Fallback image if video doesn't load -->
           <img src="${config.hero.desktopBanner}" alt="Hero Banner" class="w-full">
@@ -36,11 +37,20 @@ export function initApp(currentPath = '/') {
       </div>
       
       <!-- Hero Content -->
-      <div class="hero-content-overlay absolute inset-0 flex items-center justify-center z-20 px-4 md:px-4 py-4 md:py-0">
-        <div class="hero-text-content max-w-5xl mx-auto text-center text-white w-full">
-          <h1 class="text-2xl md:text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 md:mb-6 leading-tight px-2 md:px-0">
-            Complete Guide to Ultrapanda - Play Online Games | Download<br class="hidden md:block">Ultra Panda Mobi App
+      <div class="hero-content-overlay absolute inset-0 flex items-center z-20 px-6 md:px-12 lg:px-16 xl:px-20 py-8 md:py-12">
+        <div class="hero-text-content max-w-4xl text-white w-full">
+          <h1 class="text-3xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 md:mb-8 leading-tight uppercase">
+            Complete Guide to Ultrapanda - Play<br class="hidden md:block">Online Games | Download<br class="hidden md:block">Ultra Panda Mobi App
           </h1>
+          <div class="hero-buttons flex flex-wrap gap-4 mt-8">
+            <a href="${config.links.signUp}" target="_blank" class="hero-play-now-btn inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-gradient-to-r from-[#F45127] to-[#F7B33D] text-white font-bold rounded-lg text-base md:text-lg hover:shadow-lg hover:scale-105 transition-all duration-300">
+              <i class="bi bi-star-fill text-xl"></i>
+              <span>Play Now</span>
+            </a>
+            <a href="${config.links.signIn}" target="_blank" class="hero-sign-in-btn inline-flex items-center gap-2 px-6 md:px-8 py-3 md:py-4 bg-transparent border-2 border-white text-white font-bold rounded-lg text-base md:text-lg hover:bg-white hover:text-black transition-all duration-300">
+              <span>Sign In</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
