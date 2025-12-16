@@ -12,8 +12,8 @@ export function initApp(currentPath = '/') {
     <!-- hero section -->
     <section class="home-hero relative">
       <div class="hero-banner-wrapper relative">
-        <video autoplay muted loop playsinline class="hero-video w-full h-full object-cover">
-          <source src="/media/ULTRAPANDA CLUB BANNER VIDEO.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline class="hero-video w-full h-full object-cover" preload="auto">
+          <source src="/media/ULTRAPANDA%20CLUB%20BANNER%20VIDEO.mp4" type="video/mp4">
           <!-- Fallback image if video doesn't load -->
           <img src="${config.hero.desktopBanner}" alt="Hero Banner" class="w-full">
         </video>

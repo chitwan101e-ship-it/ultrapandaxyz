@@ -2,6 +2,7 @@ import { Header } from '../components/Header.js';
 import { Footer } from '../components/Footer.js';
 import config from '../data/config.json';
 
+// Compiled FAQs from all pages - no duplicates
 const faqs = [
   {
     question: "Is Ultrapanda.xyz the official Ultrapanda website?",
@@ -20,8 +21,12 @@ const faqs = [
     answer: `To download <strong>Ultrapanda</strong> or get the <strong>Ultra Panda Mobi</strong> app, visit our <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">official Facebook page</a> for the <strong>Ultrapanda download</strong> link. The <strong>Ultrapanda mobi</strong> app provides optimized mobile gaming with full access to all <strong>Ultrapanda</strong> features and games. You can also play <strong>Ultrapanda online</strong> without downloading. If you encounter any <strong>Ultrapanda download</strong> issues, our support team is available to assist you.`
   },
   {
-    question: "Can I play Ultrapanda games without downloading the app?",
-    answer: "Currently, we primarily offer our gaming experience through our app for the best performance and security. However, we are actively working on expanding our accessibility options to provide web-based alternatives. For the most up-to-date information on platform access methods, please contact our support team or check our <a href=\"/blog\" class=\"text-orange hover:underline\">blog</a> for announcements."
+    question: "Can I play Ultrapanda games on mobile?",
+    answer: "Yes! All <strong>Ultrapanda games</strong> are fully optimized for mobile devices. You can play directly through your mobile browser or download the <strong>Ultra Panda Mobi</strong> app for an enhanced mobile gaming experience with faster loading times and smoother gameplay. Currently, we primarily offer our gaming experience through our app for the best performance and security."
+  },
+  {
+    question: "Do I need to download games to play?",
+    answer: "No downloads required for most games. You can play <strong>Ultrapanda games</strong> instantly through your web browser. However, downloading the <strong>Ultrapanda app</strong> provides additional features, faster performance, and offline access to certain game modes."
   },
   {
     question: "I'm having trouble with my Ultrapanda login or Ultrapanda mobi login. What should I do?",
@@ -32,20 +37,32 @@ const faqs = [
     answer: "We can provide assistance for accounts created through our official Ultrapanda.xyz platform and verified through our official channels. For account-related concerns, cashout inquiries, or transaction issues, please contact our support team with your account details. We're committed to resolving legitimate concerns promptly and fairly."
   },
   {
+    question: "How many games does Ultrapanda offer?",
+    answer: "Ultrapanda features over 75 premium games including <strong>fish arcade games</strong>, <strong>777 slot machines</strong>, and <strong>arcade casino titles</strong>. Our library is regularly updated with new releases and popular favorites to keep your gaming experience fresh and exciting."
+  },
+  {
     question: "What types of games are available on Ultrapanda?",
     answer: "Ultrapanda offers a diverse collection including <strong>fish shooting games</strong> like Ocean King, <strong>777 slot machines</strong> such as Golden Legend Plus, and various <strong>arcade casino games</strong>. We have over 75 premium titles in our library. Explore our complete <a href=\"/games\" class=\"text-orange hover:underline\">games collection</a> to see all available titles."
   },
   {
-    question: "How do I become an Ultrapanda agent?",
-    answer: `If you're interested in joining our team as an agent, please send a message to our <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">official Facebook account</a>. We'll provide you with all the necessary information, requirements, and details to begin your journey as an Ultrapanda agent.`
+    question: "What are the most popular Ultrapanda games?",
+    answer: "Our most played games include <strong>Ocean King</strong> (fish shooting), <strong>Golden Legend Plus</strong> (slots), <strong>Hai Di Lao</strong> (arcade), and <strong>Triple Supreme Xtreme</strong> (777 slots). These titles consistently rank high in player engagement and satisfaction. Visit our <a href=\"/\" class=\"text-orange hover:underline\">homepage</a> to see featured games."
+  },
+  {
+    question: "How do I find specific game types?",
+    answer: "Our games are organized by categories: <strong>fish arcade games</strong>, <strong>777 slots</strong>, and <strong>arcade casino titles</strong>. You can browse all games on our <a href=\"/games\" class=\"text-orange hover:underline\">games page</a> or use our search feature to find specific titles. For gaming tips and strategies, check out our <a href=\"/blog\" class=\"text-orange hover:underline\">Ultrapanda blog</a>."
+  },
+  {
+    question: "Are Ultrapanda games fair and secure?",
+    answer: "Absolutely. All <strong>Ultrapanda games</strong> use certified random number generators (RNG) to ensure fair play. Our platform employs advanced security measures to protect your account and transactions. We're committed to providing a safe, transparent gaming environment. Ultrapanda employs advanced encryption and security measures to protect your personal information and transactions."
   },
   {
     question: "What bonuses and promotions does Ultrapanda offer?",
     answer: "New players receive a <strong>100% sign-up bonus</strong> on their first deposit. We also offer weekly promotions, reload bonuses, and special event rewards. For the latest bonus announcements and promotional offers, check our <a href=\"/blog\" class=\"text-orange hover:underline\">blog</a> or contact our support team for current promotions."
   },
   {
-    question: "Is Ultrapanda safe and secure?",
-    answer: "Absolutely. Ultrapanda employs advanced encryption and security measures to protect your personal information and transactions. We use certified random number generators (RNG) for fair gameplay and maintain strict security protocols. Your safety and privacy are our top priorities."
+    question: "How do I become an Ultrapanda agent?",
+    answer: `If you're interested in joining our team as an agent, please send a message to our <a href="${config.links.facebook}" target="_blank" class="text-orange hover:underline">official Facebook account</a>. We'll provide you with all the necessary information, requirements, and details to begin your journey as an Ultrapanda agent.`
   },
   {
     question: "How quickly does Ultrapanda support respond?",
