@@ -22,7 +22,7 @@ export function Games(currentPath = '/games') {
     </section>
     
     <!-- Game Categories Section -->
-    <section class="game-categories py-12 bg-gray-900">
+    <section class="game-categories py-12">
       <div class="g-container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Ultrapanda Game Categories</h2>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

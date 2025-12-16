@@ -100,7 +100,7 @@ export function ContactUs(currentPath = '/contact-us') {
     </section>
     
     <!-- Support Options -->
-    <section class="support-options py-12 bg-gray-900">
+    <section class="support-options py-12">
       <div class="g-container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Multiple Ways to Reach Us</h2>
         <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">

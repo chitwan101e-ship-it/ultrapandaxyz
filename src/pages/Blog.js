@@ -91,7 +91,7 @@ export function Blog(currentPath = '/blog') {
     </section>
     
     <!-- Featured Blog Topics -->
-    <section class="blog-topics py-12 bg-gray-900">
+    <section class="blog-topics py-12">
       <div class="g-container">
         <h2 class="text-3xl md:text-4xl font-bold text-center mb-8">Featured Blog Topics & Guides</h2>
         <p class="text-center mb-12 max-w-2xl mx-auto">Discover comprehensive guides and articles covering all aspects of the Ultrapanda gaming experience. These topics are optimized to help you succeed and stay informed.</p>
