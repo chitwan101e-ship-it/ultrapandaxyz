@@ -5,12 +5,18 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
   return `
     ${Header(currentPath)}
     
-    <section class="guide-hero py-12 bg-gray-900">
-      <div class="g-container max-w-4xl mx-auto px-4">
-        <h1 class="text-4xl md:text-5xl font-bold mb-4 text-center">Ultra Panda Complete Guide (2025): Games, Bonuses, App & How It Works</h1>
-        <p class="text-center text-gray-300 mb-4">
-          <strong>Official Website:</strong> <a href="https://ultrapanda.club" target="_blank" class="text-orange hover:underline">https://ultrapanda.club</a>
-        </p>
+    <section class="guide-hero relative">
+      <div class="guide-hero-banner relative">
+        <img src="/media/UP images/ultrapanda club lobby.png" alt="Ultra Panda Club Lobby" class="w-full h-auto">
+        <div class="guide-hero-overlay absolute inset-0 bg-black bg-opacity-40"></div>
+      </div>
+      <div class="guide-hero-content absolute inset-0 flex items-center justify-center z-10">
+        <div class="g-container max-w-4xl mx-auto px-4 text-center">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Ultra Panda Complete Guide (2025): Games, Bonuses, App & How It Works</h1>
+          <p class="text-gray-200 mb-4">
+            <strong>Official Website:</strong> <a href="https://ultrapanda.club" target="_blank" class="text-orange hover:underline">https://ultrapanda.club</a>
+          </p>
+        </div>
       </div>
     </section>
     
@@ -47,7 +53,10 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             Ultra Panda offers a wide range of games organized into easy categories, making it simple for new and returning players to explore.
           </p>
           
-          <h3 class="text-2xl font-bold mb-4 mt-6">🎣 Ultra Panda Fishing Games</h3>
+          <h3 class="text-2xl font-bold mb-4 mt-6 flex items-center gap-2">
+            <i class="bi bi-water text-orange text-2xl"></i>
+            Ultra Panda Fishing Games
+          </h3>
           <p class="text-lg leading-relaxed mb-4">
             Fishing games are one of the most popular features on Ultra Panda. Players target fish, bosses, and special characters to earn rewards. These games often contribute toward:
           </p>
@@ -60,7 +69,10 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             Fishing games are fast-paced and visually rich, appealing to both casual and experienced players.
           </p>
           
-          <h3 class="text-2xl font-bold mb-4 mt-6">🎰 Ultra Panda Slot Games</h3>
+          <h3 class="text-2xl font-bold mb-4 mt-6 flex items-center gap-2">
+            <i class="bi bi-dice-6 text-orange text-2xl"></i>
+            Ultra Panda Slot Games
+          </h3>
           <p class="text-lg leading-relaxed mb-4">
             Ultra Panda includes a large collection of slot games featuring:
           </p>
@@ -73,7 +85,10 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             Many Ultra Panda slots include bonus rounds, multipliers, and progressive jackpots, keeping gameplay exciting and rewarding.
           </p>
           
-          <h3 class="text-2xl font-bold mb-4 mt-6">🎲 Table Games, Keno & Blackjack</h3>
+          <h3 class="text-2xl font-bold mb-4 mt-6 flex items-center gap-2">
+            <i class="bi bi-dice-5 text-orange text-2xl"></i>
+            Table Games, Keno & Blackjack
+          </h3>
           <p class="text-lg leading-relaxed mb-6">
             For players who enjoy classic casino gameplay, Ultra Panda also offers:
           </p>
@@ -105,12 +120,24 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             Ultra Panda stands out due to its layered reward and bonus structure.
           </p>
           
-          <h3 class="text-2xl font-bold mb-4 mt-6">🎁 Ultra Panda Daily Bonus</h3>
+          <h3 class="text-2xl font-bold mb-4 mt-6 flex items-center gap-2">
+            <i class="bi bi-gift text-orange text-2xl"></i>
+            Ultra Panda Daily Bonus
+          </h3>
+          <div class="mb-4">
+            <img src="/media/UP images/ultrapanda daily bonus.png" alt="Ultra Panda Daily Bonus" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+          </div>
           <p class="text-lg leading-relaxed mb-6">
             Players receive a daily login bonus, with rewards increasing when logging in on consecutive days. Missing a day may reset the bonus cycle.
           </p>
           
-          <h3 class="text-2xl font-bold mb-4 mt-6">📱 Ultra Panda App Exclusive Bonus</h3>
+          <h3 class="text-2xl font-bold mb-4 mt-6 flex items-center gap-2">
+            <i class="bi bi-phone text-orange text-2xl"></i>
+            Ultra Panda App Exclusive Bonus
+          </h3>
+          <div class="mb-4">
+            <img src="/media/UP images/ultrapanda exclusive bonus.png" alt="Ultra Panda App Exclusive Bonus" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+          </div>
           <p class="text-lg leading-relaxed mb-4">
             Downloading the Ultra Panda app unlocks app-exclusive bonuses, including:
           </p>
@@ -123,7 +150,13 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             These bonuses are not available on the web version alone.
           </p>
           
-          <h3 class="text-2xl font-bold mb-4 mt-6">🐱 Kitty Bank System</h3>
+          <h3 class="text-2xl font-bold mb-4 mt-6 flex items-center gap-2">
+            <i class="bi bi-piggy-bank text-orange text-2xl"></i>
+            Kitty Bank System
+          </h3>
+          <div class="mb-4">
+            <img src="/media/UP images/ultrapanda club kitty bank bonus.png" alt="Ultra Panda Kitty Bank Bonus" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+          </div>
           <p class="text-lg leading-relaxed mb-4">
             The Kitty Bank is a reward accumulation feature:
           </p>
@@ -133,12 +166,27 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             <li>Encourages consistent gameplay</li>
           </ul>
           
-          <h3 class="text-2xl font-bold mb-4 mt-6">🔄 Bonus Transfer System</h3>
+          <h3 class="text-2xl font-bold mb-4 mt-6 flex items-center gap-2">
+            <i class="bi bi-arrow-repeat text-orange text-2xl"></i>
+            Bonus Transfer System
+          </h3>
+          <div class="mb-4">
+            <img src="/media/UP images/ultrapanda club transfer bonus.png" alt="Ultra Panda Bonus Transfer System" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+          </div>
           <p class="text-lg leading-relaxed mb-6">
             Bonus points earned through events and gameplay can become transferable based on activity and level. Once transferable, bonus points can be moved to the playable balance and used in games. Higher levels unlock better transfer ratios.
           </p>
           
-          <h3 class="text-2xl font-bold mb-4 mt-6">🎡 Lucky Wheel & Tasks</h3>
+          <h3 class="text-2xl font-bold mb-4 mt-6 flex items-center gap-2">
+            <i class="bi bi-circle text-orange text-2xl"></i>
+            Lucky Wheel & Tasks
+          </h3>
+          <div class="mb-4">
+            <img src="/media/UP images/ultrapanda lucky wheel.png" alt="Ultra Panda Lucky Wheel" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+          </div>
+          <div class="mb-4">
+            <img src="/media/UP images/ultrapanda club task reward.png" alt="Ultra Panda Task Rewards" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+          </div>
           <p class="text-lg leading-relaxed mb-4">
             Ultra Panda also includes:
           </p>
@@ -193,8 +241,9 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
           </p>
           
           <div class="bg-gray-800 p-6 rounded-lg mb-8">
-            <p class="text-lg mb-2">
-              <strong>👉 Visit now:</strong> <a href="https://ultrapanda.club" target="_blank" class="text-orange hover:underline">https://ultrapanda.club</a>
+            <p class="text-lg mb-2 flex items-center gap-2">
+              <i class="bi bi-arrow-right text-orange text-xl"></i>
+              <strong>Visit now:</strong> <a href="https://ultrapanda.club" target="_blank" class="text-orange hover:underline">https://ultrapanda.club</a>
             </p>
           </div>
         </div>

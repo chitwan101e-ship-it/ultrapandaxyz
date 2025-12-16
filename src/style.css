@@ -1019,6 +1019,56 @@
   }
 }
 
+.guide-hero {
+  position: relative;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.guide-hero-banner {
+  position: relative;
+  width: 100%;
+}
+
+.guide-hero-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.guide-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5));
+}
+
+.guide-hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+.guide-content img {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .guide-hero {
+    min-height: 300px;
+  }
+  
+  .guide-hero-content h1 {
+    font-size: 1.75rem !important;
+  }
+}
+
 @keyframes bonusFloat {
 
   0%,
