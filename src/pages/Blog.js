@@ -84,7 +84,7 @@ export function Blog(currentPath = '/blog') {
             <li>Navigate account management, <strong>Ultrapanda login password</strong> recovery, and technical support</li>
           </ul>
           <p>
-            Explore our <a href="/games" class="text-orange hover:underline font-semibold">games collection</a> to try out the strategies you learn, or <a href="/contact-us" class="text-orange hover:underline font-semibold">contact our support team</a> if you have questions about any blog topics.
+            Explore our <a href="/games" class="text-orange hover:underline font-semibold">games collection</a> to try out the strategies you learn, or <a href="/contact-us" class="text-orange hover:underline font-semibold">contact our support team</a> if you have questions about any blog topics. For more information about the <strong>Ultrapanda</strong> platform, visit our <a href="/" class="text-orange hover:underline font-semibold">homepage</a>.
           </p>
         </div>
       </div>
