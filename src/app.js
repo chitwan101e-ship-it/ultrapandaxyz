@@ -17,8 +17,8 @@ export function initApp(currentPath = '/') {
           <!-- Fallback image if video doesn't load -->
           <img src="${config.hero.desktopBanner}" alt="Hero Banner" class="w-full">
         </video>
-        <!-- Dark overlay for text prominence -->
-        <div class="hero-dark-overlay absolute inset-0 bg-black bg-opacity-50 z-10"></div>
+        <!-- Dark overlay for text prominence - stronger overlay for video -->
+        <div class="hero-dark-overlay absolute inset-0 bg-black bg-opacity-60 z-10"></div>
       </div>
       
       <div class="casino-shimmer"></div>
