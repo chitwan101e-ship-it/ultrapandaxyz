@@ -118,6 +118,59 @@ function updateSEO(path) {
 
   // Inject FAQ schema for pages that need it
   injectFAQSchema(path);
+
+  // Add Open Graph and Twitter Card meta tags
+  updateSocialMetaTags(path, data);
+}
+
+function updateSocialMetaTags(path, data) {
+  const baseUrl = 'https://ultrapanda.xyz';
+  const url = `${baseUrl}${path === '/' ? '' : path}`;
+  const imageUrl = `${baseUrl}/media/logo.png`;
+
+  // Open Graph tags
+  const ogTags = {
+    'og:title': data.title,
+    'og:description': data.description,
+    'og:url': url,
+    'og:type': 'website',
+    'og:image': imageUrl,
+    'og:site_name': 'Ultrapanda'
+  };
+
+  // Twitter Card tags
+  const twitterTags = {
+    'twitter:card': 'summary_large_image',
+    'twitter:title': data.title,
+    'twitter:description': data.description,
+    'twitter:image': imageUrl
+  };
+
+  // Update or create Open Graph tags
+  Object.entries(ogTags).forEach(([property, content]) => {
+    let tag = document.querySelector(`meta[property="${property}"]`);
+    if (tag) {
+      tag.setAttribute('content', content);
+    } else {
+      tag = document.createElement('meta');
+      tag.setAttribute('property', property);
+      tag.setAttribute('content', content);
+      document.head.appendChild(tag);
+    }
+  });
+
+  // Update or create Twitter Card tags
+  Object.entries(twitterTags).forEach(([name, content]) => {
+    let tag = document.querySelector(`meta[name="${name}"]`);
+    if (tag) {
+      tag.setAttribute('content', content);
+    } else {
+      tag = document.createElement('meta');
+      tag.setAttribute('name', name);
+      tag.setAttribute('content', content);
+      document.head.appendChild(tag);
+    }
+  });
 }
 
 function injectFAQSchema(path) {

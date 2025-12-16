@@ -60,7 +60,7 @@ export function initApp(currentPath = '/') {
             <div class="most-popularbox relative">
               ${game.hasDesign ? `
                 <div class="most-popular-design absolute ${game.designPosition === 'top' ? 'top-0' : 'bottom-0'}">
-                  <img src="/media/cube-design.png" alt="">
+                  <img src="/media/cube-design.png" alt="Decorative cube design element" role="presentation">
                 </div>
               ` : ''}
               <a href="${config.links.signUp}" target="_blank">
@@ -124,10 +124,10 @@ export function initApp(currentPath = '/') {
     <section class="most-played-games-main py-12 relative">
       <div class="most-played-games-container g-container">
         <div class="most-played-design1 absolute">
-          <img src="/media/most-played-design1.svg" alt="">
+          <img src="/media/most-played-design1.svg" alt="Decorative design element" role="presentation">
         </div>
         <div class="most-played-design2 absolute">
-          <img src="/media/most-played-design2.svg" alt="">
+          <img src="/media/most-played-design2.svg" alt="Decorative design element" role="presentation">
         </div>
         <h2 class="text-3xl font-bold text-center mb-4">Most Played Games <br>Of The Year</h2>
         <p class="text-center mb-8 max-w-2xl mx-auto">Based on player data and engagement metrics, these <strong>Ultrapanda games</strong> have dominated the leaderboards throughout the year. Action-packed battle and strategy games continue to be favorites among our community, offering both excitement and rewarding gameplay experiences.</p>
