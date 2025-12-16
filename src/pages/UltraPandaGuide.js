@@ -7,7 +7,7 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
     
     <section class="guide-hero relative">
       <div class="guide-hero-banner relative">
-        <img src="/media/UP images/ultrapanda club lobby.png" alt="Ultra Panda Club Lobby" class="w-full h-auto">
+        <img src="/media/UP%20images/ultrapanda%20club%20lobby.png" alt="Ultra Panda Club Lobby" class="w-full h-auto">
         <div class="guide-hero-overlay absolute inset-0 bg-black bg-opacity-40"></div>
       </div>
       <div class="guide-hero-content absolute inset-0 flex items-center justify-center z-10">
@@ -125,7 +125,7 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             Ultra Panda Daily Bonus
           </h3>
           <div class="mb-4">
-            <img src="/media/UP images/ultrapanda daily bonus.png" alt="Ultra Panda Daily Bonus" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+            <img src="/media/UP%20images/ultrapanda%20daily%20bonus.png" alt="Ultra Panda Daily Bonus" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
           </div>
           <p class="text-lg leading-relaxed mb-6">
             Players receive a daily login bonus, with rewards increasing when logging in on consecutive days. Missing a day may reset the bonus cycle.
@@ -136,7 +136,7 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             Ultra Panda App Exclusive Bonus
           </h3>
           <div class="mb-4">
-            <img src="/media/UP images/ultrapanda exclusive bonus.png" alt="Ultra Panda App Exclusive Bonus" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+            <img src="/media/UP%20images/ultrapanda%20exclusive%20bonus.png" alt="Ultra Panda App Exclusive Bonus" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
           </div>
           <p class="text-lg leading-relaxed mb-4">
             Downloading the Ultra Panda app unlocks app-exclusive bonuses, including:
@@ -155,7 +155,7 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             Kitty Bank System
           </h3>
           <div class="mb-4">
-            <img src="/media/UP images/ultrapanda club kitty bank bonus.png" alt="Ultra Panda Kitty Bank Bonus" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+            <img src="/media/UP%20images/ultrapanda%20club%20kitty%20bank%20bonus.png" alt="Ultra Panda Kitty Bank Bonus" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
           </div>
           <p class="text-lg leading-relaxed mb-4">
             The Kitty Bank is a reward accumulation feature:
@@ -171,7 +171,7 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             Bonus Transfer System
           </h3>
           <div class="mb-4">
-            <img src="/media/UP images/ultrapanda club transfer bonus.png" alt="Ultra Panda Bonus Transfer System" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+            <img src="/media/UP%20images/ultrapanda%20club%20transfer%20bonus.png" alt="Ultra Panda Bonus Transfer System" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
           </div>
           <p class="text-lg leading-relaxed mb-6">
             Bonus points earned through events and gameplay can become transferable based on activity and level. Once transferable, bonus points can be moved to the playable balance and used in games. Higher levels unlock better transfer ratios.
@@ -182,10 +182,10 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
             Lucky Wheel & Tasks
           </h3>
           <div class="mb-4">
-            <img src="/media/UP images/ultrapanda lucky wheel.png" alt="Ultra Panda Lucky Wheel" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+            <img src="/media/UP%20images/ultrapanda%20lucky%20wheel.png" alt="Ultra Panda Lucky Wheel" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
           </div>
           <div class="mb-4">
-            <img src="/media/UP images/ultrapanda club task reward.png" alt="Ultra Panda Task Rewards" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
+            <img src="/media/UP%20images/ultrapanda%20club%20task%20reward.png" alt="Ultra Panda Task Rewards" class="w-full max-w-2xl mx-auto rounded-lg mb-4">
           </div>
           <p class="text-lg leading-relaxed mb-4">
             Ultra Panda also includes:
