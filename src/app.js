@@ -39,10 +39,10 @@ export function initApp(currentPath = '/') {
       <!-- Hero Content -->
       <div class="hero-content-overlay absolute inset-0 flex items-center z-20 px-6 md:px-12 lg:px-16 xl:px-20 py-8 md:py-12">
         <div class="hero-text-content max-w-4xl text-white w-full">
-          <h1 class="hero-main-heading text-4xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 md:mb-6 leading-tight uppercase">
+          <h1 class="hero-main-heading text-3xl md:text-4xl lg:text-5xl font-bold mb-4 md:mb-6 leading-tight uppercase">
             Discover Ultra Panda. the all in one gaming platform
           </h1>
-          <h2 class="hero-sub-heading text-lg md:text-xl lg:text-2xl font-normal mb-6 md:mb-8 leading-relaxed opacity-90">
+          <h2 class="hero-sub-heading text-base md:text-lg lg:text-xl font-normal mb-6 md:mb-8 leading-relaxed opacity-90">
             <a href="/ultrapandacompleteguide" class="hover:text-orange transition-colors cursor-pointer underline">Ultra Panda Complete Guide- Game Bonuses & App(2025)</a>
           </h2>
           <div class="hero-buttons flex flex-wrap gap-4 mt-8">
