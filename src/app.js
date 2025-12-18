@@ -62,7 +62,7 @@ export function initApp(currentPath = '/') {
     <section class="most-popular py-12">
       <div class="most-popular-container g-container">
         <h2 class="text-3xl font-bold text-center mb-4">Top Ultrapanda <span class="text-orange">Arcade Games</span></h2>
-        <p class="text-center mb-8 max-w-2xl mx-auto">Experience the most popular <strong>Ultrapanda games</strong> loved by players worldwide. From action-packed <strong>fish shooting games</strong> to thrilling <strong>slot machines</strong>, these titles deliver exceptional gameplay and winning opportunities.</p>
+        <p class="text-center mb-8 max-w-2xl mx-auto">Experience the most popular <strong>Ultrapanda games</strong> and <strong>Ultra Panda casino</strong> titles loved by players worldwide. From action-packed <strong>fish shooting games</strong> to thrilling <strong>Ultra Panda slots</strong> and <strong>Ultrapanda 777</strong> games, these titles deliver exceptional gameplay and winning opportunities. <a href="/games" class="text-orange hover:underline font-semibold">View all games</a> or learn about <a href="/bonuses" class="text-orange hover:underline font-semibold">bonuses</a>.</p>
         <div class="most-popular-wrapper g-flex flex-wrap justify-center gap-4">
           ${gamesData.mostPopular.map(game => `
             <div class="most-popularbox relative">
@@ -95,7 +95,7 @@ export function initApp(currentPath = '/') {
             Whether you're playing from desktop or mobile, Ultrapanda gives you instant access to this fast-paced <strong>arcade fish shooter</strong>. No downloads, no agents – just tap and play. Join thousands of gamers choosing Ultrapanda for their go-to <strong>fish game casino</strong>. Dive in today and start collecting <strong>real rewards, bonus coins, and exclusive offers</strong>.
           </p>
           <p>
-            Looking for more gaming options? Explore our complete <a href="/games" class="text-orange hover:underline font-semibold">Ultrapanda games collection</a> featuring slots, arcade games, and more. For the latest tips and strategies, visit our <a href="/blog" class="text-orange hover:underline font-semibold">Ultrapanda blog</a>.
+            Looking for more gaming options? Explore our complete <a href="/games" class="text-orange hover:underline font-semibold">Ultrapanda games collection</a> featuring slots, arcade games, and more. Check out our <a href="/bonuses" class="text-orange hover:underline font-semibold">bonuses and promotions</a>, <a href="/app" class="text-orange hover:underline font-semibold">download the app</a>, or visit our <a href="/blog" class="text-orange hover:underline font-semibold">Ultrapanda blog</a> for tips and strategies.
           </p>
         </div>
       </div>

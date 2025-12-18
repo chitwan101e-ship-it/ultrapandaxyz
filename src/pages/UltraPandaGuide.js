@@ -12,9 +12,9 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
       </div>
       <div class="guide-hero-content absolute inset-0 flex items-center justify-center z-10">
         <div class="g-container max-w-4xl mx-auto px-4 text-center">
-          <h1 class="text-3xl md:text-4xl font-bold mb-4 text-white" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.7);">Ultra Panda Complete Guide (2025): Games, Bonuses, App & How It Works</h1>
+          <h1 class="text-3xl md:text-4xl font-bold mb-4 text-white" style="text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.9), 0 0 20px rgba(0, 0, 0, 0.7);">Ultrapanda Complete Guide - Login, Download, Games & Bonuses</h1>
           <p class="text-gray-200 mb-4" style="text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);">
-            <strong>Official Website:</strong> <a href="https://ultrapanda.club" target="_blank" class="text-orange hover:underline">https://ultrapanda.club</a>
+            Complete guide to <strong>Ultrapanda login</strong>, <strong>ultrapanda download</strong>, <strong>ultrapanda mobi login</strong>, games, bonuses, and more. <strong>Official Website:</strong> <a href="https://ultrapanda.club" target="_blank" class="text-orange hover:underline">https://ultrapanda.club</a>
           </p>
         </div>
       </div>
@@ -28,7 +28,35 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
           </p>
           
           <p class="text-base leading-relaxed mb-8">
-            Whether you're looking for <strong>Ultra Panda games</strong>, <strong>Ultra Panda bonus</strong> information, or details about the <strong>Ultra Panda app</strong>, this guide covers everything you need to know.
+            Whether you're looking for <strong>Ultrapanda login</strong> instructions, <strong>ultrapanda download</strong> guides, <strong>ultrapanda mobi login</strong> help, <strong>Ultra Panda games</strong>, <strong>Ultra Panda bonus</strong> information, or details about the <strong>Ultra Panda app</strong>, this complete guide covers everything you need to know.
+          </p>
+          
+          <h2 class="text-2xl font-bold mb-4 mt-8">How to Login to Ultrapanda</h2>
+          <p class="text-base leading-relaxed mb-4">
+            To access your <strong>Ultrapanda</strong> account, you'll need to complete your <strong>Ultrapanda login</strong>. Here's how to log in:
+          </p>
+          <ul class="list-disc list-inside space-y-2 mb-6 ml-4 text-base">
+            <li><strong>Ultrapanda login:</strong> Visit the official website and enter your credentials</li>
+            <li><strong>Ultrapanda mobi login:</strong> Use your mobile device to access <strong>ultrapanda.mobi</strong> or the <strong>Ultra Panda Mobi</strong> app</li>
+            <li><strong>Ultrapanda mobi login password:</strong> If you've forgotten your password, use the password recovery feature or contact support</li>
+            <li><strong>Ultrapanda admin login:</strong> Admin access is available for authorized agents and administrators</li>
+          </ul>
+          <p class="text-base leading-relaxed mb-8">
+            If you're having trouble with your <strong>Ultrapanda login</strong> or need help with <strong>ultrapanda mobi login</strong>, visit our <a href="/contact-us" class="text-orange hover:underline">contact page</a> for support.
+          </p>
+          
+          <h2 class="text-2xl font-bold mb-4 mt-8">How to Download Ultrapanda</h2>
+          <p class="text-base leading-relaxed mb-4">
+            To download <strong>Ultrapanda</strong> or get the <strong>Ultra Panda Mobi</strong> app:
+          </p>
+          <ul class="list-disc list-inside space-y-2 mb-6 ml-4 text-base">
+            <li><strong>Ultrapanda download:</strong> Visit our official Facebook page for the download link</li>
+            <li><strong>Ultra Panda Mobi app:</strong> Available for both iOS and Android devices</li>
+            <li><strong>Ultrapanda.mobi:</strong> You can also access the mobile-optimized website without downloading</li>
+            <li><strong>www ultrapanda mobi:</strong> Visit this URL directly from your mobile browser</li>
+          </ul>
+          <p class="text-base leading-relaxed mb-8">
+            For detailed download instructions, check our <a href="/app" class="text-orange hover:underline">Ultrapanda app download page</a>.
           </p>
           
           <h2 class="text-2xl font-bold mb-4 mt-8">What Is Ultra Panda?</h2>
@@ -214,10 +242,12 @@ export function UltraPandaGuide(currentPath = '/ultrapandacompleteguide') {
           
           <h2 class="text-2xl font-bold mb-4 mt-8">How to Get Started With Ultra Panda</h2>
           <ol class="list-decimal list-inside space-y-2 mb-8 ml-4 text-base">
-            <li>Visit <a href="https://ultrapanda.club" target="_blank" class="text-orange hover:underline">ultrapanda.club</a></li>
-            <li>Create an account</li>
+            <li>Visit <a href="https://ultrapanda.club" target="_blank" class="text-orange hover:underline">ultrapanda.club</a> or access <strong>www.ultrapanda.mobi</strong> on mobile</li>
+            <li>Create an account (or use <strong>Ultrapanda login</strong> if you already have one)</li>
+            <li>Download the <strong>Ultrapanda app</strong> or play via <strong>ultrapanda online</strong> browser</li>
+            <li>Complete your <strong>ultrapanda mobi login</strong> if using the mobile app</li>
             <li>Explore games via web or app</li>
-            <li>Claim daily and app-exclusive bonuses</li>
+            <li>Claim daily and app-exclusive bonuses (see our <a href="/bonuses" class="text-orange hover:underline">bonuses page</a>)</li>
             <li>Complete tasks and grow rewards</li>
           </ol>
           

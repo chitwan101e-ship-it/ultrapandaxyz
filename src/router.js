@@ -35,6 +35,20 @@ const routes = {
       initUltraPandaGuide();
       initMobileMenu();
     }, 0);
+  },
+  '/app': (path) => {
+    document.getElementById('app').innerHTML = AppPage(path);
+    setTimeout(() => {
+      initAppPage();
+      initMobileMenu();
+    }, 0);
+  },
+  '/bonuses': (path) => {
+    document.getElementById('app').innerHTML = Bonuses(path);
+    setTimeout(() => {
+      initBonuses();
+      initMobileMenu();
+    }, 0);
   }
 };
 
@@ -66,19 +80,34 @@ function initMobileMenu() {
 function updateSEO(path) {
   const seoData = {
     '/': {
-      title: 'Ultrapanda - Official Login & Download | Ultra Panda Mobi | 777 Games Online',
-      description: 'Ultrapanda - Play premium fish arcade games and 777 slots online. Download Ultra Panda Mobi app or play instantly. Ultrapanda login, 100% bonus, no agent required. Official Ultrapanda.xyz platform.',
-      keywords: 'ultrapanda, ultrapanda mobi, ultrapanda login, ultrapanda download, ultrapanda.mobi, ultrapanda online, ultrapanda 777, Ultra Panda Mobi, Ultrapanda Club 777, fish arcade games, 777 slots'
+      title: 'Ultrapanda - Official Website | Ultra Panda Online Casino & 777 Slots',
+      description: 'Ultrapanda - Play Ultra Panda online casino games, 777 slots, and fish arcade games. Official Ultrapanda website with instant access, 100% sign-up bonus, and no agent required. Download Ultra Panda Mobi app or play online today!',
+      keywords: 'ultrapanda, ultra panda, ultrapanda mobi, ultrapanda login, ultrapanda online, ultra panda online, ultra panda casino, ultra panda slots, ultrapanda 777, www ultrapanda, ultrapanda.mobi, Ultra Panda Mobi'
     },
     '/games': {
-      title: 'Ultrapanda Games - Play Fish Arcade, 777 Slots & Casino Games Online',
-      description: 'Play Ultrapanda games online - 75+ fish arcade games, 777 slots, and arcade casino titles. Ocean King, Golden Legend Plus, and more. Play instantly on Ultrapanda mobi or desktop. No download required.',
-      keywords: 'ultrapanda games, ultrapanda game, ultrapanda casino, ultrapanda slots, fish arcade games, 777 slots, Ocean King, Ultrapanda online games, play ultrapanda'
+      title: 'Ultrapanda Games - Ultra Panda Casino, 777 Slots & Online Games',
+      description: 'Play Ultrapanda games online - Ultra Panda casino games, Ultra Panda slots, Ultrapanda 777 slots, fish arcade games, and more. Ocean King, Golden Legend Plus, and 75+ premium titles. Play instantly online or download the app.',
+      keywords: 'ultrapanda games, ultra panda casino, ultra panda slots, ultrapanda 777, ultrapanda casino, ultrapanda slots, fish arcade games, ultra panda online, play ultrapanda, ultrapanda game'
     },
     '/blog': {
       title: 'Ultrapanda Blog - Login Guide, Download Tips & Gaming Strategies',
       description: 'Ultrapanda blog with login guides, download instructions for Ultra Panda Mobi app, gaming strategies, and platform updates. Learn Ultrapanda login, download tips, and winning strategies.',
       keywords: 'ultrapanda blog, ultrapanda login guide, ultrapanda download, ultrapanda mobi login, ultrapanda tips, Ultrapanda strategies, Ultra Panda Mobi guide'
+    },
+    '/app': {
+      title: 'Ultrapanda App Download - Ultra Panda Mobi App | iOS & Android',
+      description: 'Download the Ultrapanda mobi app for iOS and Android. Get Ultra Panda mobile app for instant access, exclusive bonuses, and optimized mobile gameplay. Visit ultrapanda.mobi or download the app today.',
+      keywords: 'ultrapanda app, ultrapanda mobi, ultrapanda download, ultrapanda.mobi, ultra panda mobi app, ultra panda mobile app, www ultrapanda mobi, ultrapanda mobi login'
+    },
+    '/bonuses': {
+      title: 'Ultrapanda Bonuses - Real Money Games & Sign Up Offers | Casino Bonuses',
+      description: 'Claim your Ultra Panda casino real money bonuses, 777 online real money promotions, and sign up offers. Play Ultra Panda online casino games and win real money prizes. 100% sign up bonus available!',
+      keywords: 'ultra panda casino real money, ultra panda 777 online real money, ultra panda sign up, ultra panda online casino, ultra panda free play, play ultra panda online, ultrapanda bonuses'
+    },
+    '/ultrapandacompleteguide': {
+      title: 'Ultrapanda Complete Guide - Login, Download, Games & Bonuses (2025)',
+      description: 'Complete Ultrapanda guide covering ultrapanda login, ultrapanda download, ultrapanda mobi login, games, bonuses, app download, and how to play. Everything you need to know about Ultrapanda in one place.',
+      keywords: 'ultrapanda complete guide, ultrapanda login, ultrapanda download, ultrapanda mobi login, ultrapanda mobi login password, ultrapanda admin login, ultrapanda agent login, ultra panda login and password free'
     },
     '/contact-us': {
       title: 'Ultrapanda Login Help & Support - Contact Us for Account & Download Issues',

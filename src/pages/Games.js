@@ -14,8 +14,8 @@ export function Games(currentPath = '/games') {
         <div class="games-hero-overlay absolute inset-0 bg-black bg-opacity-50 z-10"></div>
         <div class="games-hero-content absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-white z-20 max-w-4xl px-4">
           <div>
-            <h1 class="text-2xl md:text-3xl font-bold mb-4">Ultrapanda Games - Play Online Fish Arcade & 777 Slots</h1>
-            <p class="text-base">Discover over 75 premium <strong>Ultrapanda games</strong> including <strong>fish shooting games</strong>, <strong>Ultrapanda 777 slots</strong>, and <strong>arcade casino titles</strong>. Play <strong>Ultrapanda online</strong> instantly or download <strong>Ultra Panda Mobi</strong> app.</p>
+            <h1 class="text-2xl md:text-3xl font-bold mb-4">Ultrapanda Games - Play Ultra Panda Casino, 777 Slots & Online Games</h1>
+            <p class="text-base">Discover over 75 premium <strong>Ultrapanda games</strong> including <strong>Ultra Panda slots</strong>, <strong>Ultra Panda casino</strong> games, <strong>Ultrapanda 777</strong> slots, and <strong>fish shooting games</strong>. Play <strong>Ultrapanda online</strong> instantly or download the <strong>Ultra Panda Mobi</strong> app.</p>
           </div>
         </div>
       </div>
@@ -36,9 +36,10 @@ export function Games(currentPath = '/games') {
             </ul>
           </div>
           <div class="bg-gray-800 p-6 rounded-lg">
-            <h3 class="text-2xl font-bold mb-4 text-orange">777 Slot Machines</h3>
-            <p class="mb-4">Spin the reels on classic and modern <strong>Ultra Panda slots</strong> featuring various themes, bonus features, and progressive jackpots. Our <strong>777 casino games</strong> offer multiple paylines and exciting winning combinations.</p>
+            <h3 class="text-2xl font-bold mb-4 text-orange">Ultra Panda Slots & 777 Games</h3>
+            <p class="mb-4">Spin the reels on classic and modern <strong>Ultra Panda slots</strong> featuring various themes, bonus features, and progressive jackpots. Play <strong>Ultrapanda 777</strong> games and experience our <strong>Ultra Panda casino</strong> slot collection with multiple paylines and exciting winning combinations.</p>
             <ul class="list-disc list-inside space-y-2 text-sm">
+              <li><strong>Ultrapanda 777</strong> slots</li>
               <li>Golden Legend Plus</li>
               <li>Triple Supreme Xtreme</li>
               <li>Lucky Shamrock & more</li>
